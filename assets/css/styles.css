@@ -10,19 +10,21 @@
     font-family: 'HarryPotter';
     src: url('../fonts/HarryPotter-ov4z.ttf') format('truetype');
 }
+/* General Styles*/
 
 body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     font-family: "MedievalSharp", cursive;
+    font-size:1.3rem;
+    background: url('../images/hogwartsBg.webp') no-repeat center/cover;
 }
 
 /* header*/
 header{
-    background-color: aquamarine;
     text-align: center;
-    padding: 1em;
+    color:#fff;
 }
 
 h1 {
@@ -39,13 +41,39 @@ h2 {
 
 /* main content*/
 main {
-    background-color: beige;
     flex: 1 0 auto;
+    margin-top: 100px;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+
+#container {
+    width: 700px;
+    margin: 0 auto;
+}
+
+.accordion {
+    background-color: #234372;
+    color:#fff;
+    cursor: pointer;
+    padding: 1em;
+    transition: 0.4s;
+    width: 100%;
+    text-align: start;
+    margin-bottom: 1.2em;
+    font-size: 1.6rem;
+    font-family: inherit;
+}
+
+.panel {
+    padding: 1.2em;
+    display:none;
 }
 
 /* footer */
 footer {
-    background-color: brown;
+    background: url('../images/backgroundPoster.webp') no-repeat center/cover;
     color:#fff;
     line-height: 3em;
+    text-align: center;
 }
