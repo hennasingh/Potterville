@@ -48,7 +48,7 @@ main {
 /* Style the buttons that are used to open and close the accordion panel */
 
 #container {
-    width: 700px;
+    max-width: 700px;
     margin: 0 auto;
 }
 
@@ -68,6 +68,17 @@ main {
 .panel {
     padding: 1.2em;
     display:none;
+    overflow: hidden;
+    color:#fff;
+    background-color: rgba(60,60,60,0.6);
+}
+
+.panel > p {
+    padding-bottom: 1em;
+}
+
+.panel ul {
+    padding-left: 0.8em;
 }
 
 /* footer */
