@@ -47,7 +47,7 @@ main {
 
 /* Style the buttons that are used to open and close the accordion panel */
 
-#container {
+.container {
     max-width: 700px;
     margin: 0 auto;
 }
@@ -80,6 +80,42 @@ main {
 .panel ul {
     padding-left: 0.8em;
 }
+
+.panel > div {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin-top: 1em;
+}
+
+/* Play Link Animation frames - from chatGPT*/
+@keyframes glow {
+    0% { box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); }
+    50% { box-shadow: 0 0 20px rgba(255, 255, 255, 1); }
+    100% { box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); }
+}
+
+.play-container {
+    padding: 0.8em;
+    background-color: rgb(35, 67, 114, 0.8);
+    width:50%;
+    margin: 1em auto;
+    cursor: pointer;
+    text-align: center;
+    animation: glow 1.5s infinite ease-in-out;
+    transition: transform 0.3s ease;
+}
+
+.play-link { 
+    text-decoration: none;
+    color:#e9a662;;
+    font-size: 1.6rem;
+}
+
+.play-container:hover {
+    transform: scale(1.05);
+}
+
 
 /* footer */
 footer {
