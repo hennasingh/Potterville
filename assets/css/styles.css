@@ -152,6 +152,35 @@ main {
     
 }
 
+.hide {
+    display:none
+}
+
+.unhide {
+    display:block;
+}
+
+#input-container {
+   margin-top: 1em;
+}
+
+#answer {
+    padding: 0.7em 1em;
+    background-color: rgb(255,255,255, 0.4);
+    border: 2px solid #e9a662;
+}
+
+.ctrl-btn {
+    padding: 0.7em 1em;
+    font-size: 1.6rem;
+    font-family: inherit;
+    margin-top: 1em;
+    background-color:#524125;
+    color:#fff;
+    border: 1px solid  #e9a662;
+    border-radius: 4px;
+}
+
 /* footer */
 footer {
     background: url('../images/backgroundPoster.webp') no-repeat center/cover;
