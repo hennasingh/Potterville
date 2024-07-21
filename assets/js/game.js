@@ -2,12 +2,14 @@ import { questions } from "./questions.js";
 const questionTitle = document.getElementById('ques-title')
 const submitBtn = document.getElementById('submit')
 const inputAnswer = document.getElementById('answer')
+const magicSpellEarned = document.getElementById('magic-spells')
 
 //variables to hold values
 
 let availableQuestions = []
 let currentQuestion = []
-let magicalItems = []
+let awardedSpell = []
+let magicalSpells = ['Reducto', 'Stupify', 'Sectumsempra', 'Bombarda', 'Imperio', 'Crucio', 'Diffindo', 'Expulso', 'Confringo', 'Petrificus Totalus']
 
 //Wait for the DOM to finish loading before running the game
 //Get the button elements and add event listeners to them
@@ -30,9 +32,10 @@ function runQuiz(quizType) {
     const quiz = questions.filter((item) => item.id == quizType)[0]
     availableQuestions = quiz.questions 
     document.getElementById('input-container').classList.remove('hide');
-    submitBtn.classList.remove('hide')
-    
-    displayQuestion()
+    submitBtn.classList.remove('hide');
+    document.getElementById('scoreboard').classList.remove('hide');
+    submitBtn.addEventListener('click', checkAnswer);
+    displayQuestion();
 }
 
 function displayQuestion() {
@@ -40,10 +43,17 @@ function displayQuestion() {
     currentQuestion = availableQuestions.splice(random,1)[0]
     console.log(currentQuestion.text) 
     questionTitle.textContent = currentQuestion.text
-    submitBtn.addEventListener('click', checkAnswer)
+    
 }
 
 function checkAnswer() {
     const userAnswer = inputAnswer.value
-    console.log(userAnswer)
+    if(currentQuestion.correctAnswers.includes(userAnswer.trim().toLowerCase())) {
+        let random = Math.floor(Math.random() * magicalSpells.length);
+        awardedSpell.push(magicalSpells.splice(random,1)[0])
+        magicSpellEarned.textContent = [...awardedSpell].join(', ')
+
+    } 
+    inputAnswer.value = ''
+    displayQuestion()
 }

@@ -9,11 +9,11 @@ export const questions = [
             },
             {
                 text:"Who kills Nagini?",
-                correctAnswers:["Neville Longbottom", "neville"]
+                correctAnswers:["neville longbottom", "neville"]
             },
             {
                 text:"What name does Harry give when caught by the Snatchers?",
-                correctAnswers:["Vernon Dudley", "vernon"]
+                correctAnswers:["vernon dudley", "vernon"]
             },
             {
                 text:"Who is taken captive when Harry goes to face Voldemort in the Forbidden Forest after the battle of Hogwarts?",
@@ -21,11 +21,11 @@ export const questions = [
             },
             {
                 text:"According to Professor Slughorn, what is the purpose of a Horcrux? a)Immortality, b)Power, c)Victory?",
-                correctAnswers:["a)Immortality", "immortality"]
+                correctAnswers:["a)immortality", "immortality"]
             },
             {
                 text:"Who destroys the locket Horcrux?",
-                correctAnswers:["Ron Weasley", "Ron", "ron"]
+                correctAnswers:["ron weasley", "ron"]
             }
         ]
     },

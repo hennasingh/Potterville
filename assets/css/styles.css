@@ -134,6 +134,18 @@ main {
     padding:1em;
 }
 
+#scoreboard {
+    margin: 0.8em 0;
+    background-color: #234372;
+    padding:0.6em;
+    font-weight: bold;
+}
+
+#scoreboard h4 {
+    letter-spacing: 2px;
+   
+}
+
 #categories-container {
     display:grid;
     grid-template-columns: auto auto;
