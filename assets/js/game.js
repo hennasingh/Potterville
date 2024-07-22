@@ -55,5 +55,9 @@ function checkAnswer() {
 
     } 
     inputAnswer.value = ''
+    if (availableQuestions.length === 0) {
+        localStorage.setItem('magicalItems', JSON.stringify(awardedSpell))
+        return window.location.assign("end.html")
+    }
     displayQuestion()
 }

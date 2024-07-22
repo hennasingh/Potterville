@@ -126,8 +126,7 @@ main {
 }
 
 .game-container {
-    width:800px;
-    max-width: 90%;
+    max-width: 800px;
     background-color: rgba(233, 166, 98, 0.3);
     border-radius: 5px;
     color:#fff;
@@ -177,9 +176,11 @@ main {
 }
 
 #answer {
-    padding: 0.7em 1em;
+    padding: 0.7em;
     background-color: rgb(255,255,255, 0.4);
     border: 2px solid #e9a662;
+    color:#524125;
+    font-weight: bold;
     font-size: 1.2rem;
 }
 
