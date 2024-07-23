@@ -55,7 +55,7 @@ export const questions = [
             },
             {
                 text:"How many points is the Snitch worth to the Seeker that catches it?",
-                correctAnswers:['one fifty', 'onefifty', '150', 150]
+                correctAnswers:['one fifty', 'onefifty', '150']
             },
             {
                 text:"What is the name of the enchanted object used to travel from one place to another?",
@@ -93,11 +93,95 @@ export const questions = [
     },
     {
         id:3,
-        option:"Hogwarts"
+        option:"Hogwarts",
+        questions: [
+            {
+                text:"How long do the champions have to wait to complete the second task of the Triwizard Tournament?",
+                correctAnswers:["one hour", "1 hour"]
+            },
+            {
+                text:"In which of the Harry's school years does Harry become Quidditch captain?",
+                correctAnswers: ["sixth", "6th"]
+            },
+            {
+                text:"During which celebratory feast does Professor Quirrell inform everyone that there is a troll loose in the dungeons?",
+                correctAnswers:["halloween", "hallowe'en"]
+            },
+            {
+                text:"Which class does Hermione storm out of in her third year at Hogwarts?",
+                correctAnswers:["divination"]
+            },
+            {
+                text:"Who tells Harry and Ron that Hagrid didn't open the Chamber of Secrets?",
+                correctAnswers:["aragog", "spider aragog"]
+            },
+            {
+                text:"What subject does Professor Slughorn teach?",
+                correctAnswers:["potions"]
+            },
+            {
+                text:"Cormac McLaggen tries out for which Quidditch position?",
+                correctAnswers:["keeper"]
+            },
+            {
+                text:"What is the first name of the Hogwarts founder Ravenclaw?",
+                correctAnswers:["rowena"]
+            },
+            {
+                text:"What word has Hermione written on the sheet of paper that Harry finds gripped in her Petrified hand?",
+                correctAnswers:["pipes"]
+            },
+            {
+                text:"What is Lavender's nickname for Ron when they are seeing each other?",
+                correctAnswers:["won-won"]
+            }
+        ]
     },
     {
         id:4,
-        option:"Magical People"
+        option:"Magical People",
+        questions: [
+            {
+                text:"Sybill Trelawney's first prophecy speaks of a boy born at the end of which month?",
+                correctAnswers:["july", "7th", "seventh"]
+            },
+            {
+                text:"What is Nicolas Flamel's profession?",
+                correctAnswers:["alchemist"]
+            },
+            {
+                text:"What is Tonk's first name, which she hates?",
+                correctAnswers:["nymphadora"]
+            },
+            {
+                text:"What are Dark-wizard-catchers known as?",
+                correctAnswers:["aurors"]
+            },
+            {
+                text:"What is Hermione's middle name?",
+                correctAnswers:["jean"]
+            },
+            {
+                text:"What is the name of Harry's second son?",
+                correctAnswers:["albus severus potter"]
+            },
+            {
+                text:"What relation are Albus and Aberforth Dumbledore?",
+                correctAnswers:["brothers"]
+            },
+            {
+                text:"For how many years has Sirius Black been in Azbaken prison?",
+                correctAnswers:["twelve", "12"]
+            },
+            {
+                text:"What is the name of Gilderoy Lockart's self-praising autobiography?",
+                correctAnswers:["magical me"]
+            },
+            {
+                text:"When Professor Trelawney predicts servant and master shall be reunited once more,'she is referring to which servant?",
+                correctAnswers:["wormtail", "peter", "peter pettigrew", "pettigrew"]
+            }
+        ]
     },
     {
         id:5,
