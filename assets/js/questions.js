@@ -185,10 +185,94 @@ export const questions = [
     },
     {
         id:5,
-        option:"Magical Spells & Potions"
+        option:"Magical Spells & Potions",
+        questions:[
+            {
+                text:"What potion does Professor Umbridge want to use to make Harry tell her Dumbledore's whereabouts?",
+                correctAnswers:["veritaserum"]
+            },
+            {
+                text:"What spell does Hermione use to freeze the Cornish pixies after they wreck havoc in Professor Lockhart's classroom?",
+                correctAnswers: ["immobilus"]
+            },
+            {
+                text:"What spell does Hermione use to break their fall from the car in Gringotts?",
+                correctAnswers:["arresto momento"]
+            },
+            {
+                text:"Which spell does Luna use to fix Harry's broken nose?",
+                correctAnswers:["episkey"]
+            },
+            {
+                text:"How long does Polyjuice Potion take to brew when the trio want to use it to interrogate Draco Malfoy?",
+                correctAnswers:["a month", "month", "30 days"]
+            },
+            {
+                text:"What is Felix Felicis also known as?",
+                correctAnswers:["liquid luck"]
+            },
+            {
+                text:"Which spell does Hermione use to unchain the Gringotts' dragon? a)Relashio b) Alohomora c)Bombarda",
+                correctAnswers:["a)relashio", "a)", "relashio", "a"]
+            }, 
+            {
+                text:"What charm does Hermione use to open a locked door when the trio are running from Filch in the 3rd floor corridor?",
+                correctAnswers:["alohomora"]
+            },
+            {
+                text:"Which spell produces light from the end of a wand?",
+                correctAnswers:["lumos"]
+            },
+            {
+                text:"What is the spell use to create water, which Harry attempts to use in the Horcrux cave?",
+                correctAnswers:["aguamenti"]
+            }
+        ]
     },
     {
         id:6,
-        option:"Animals & Magical Creatures"
+        option:"Animals & Magical Creatures",
+        questions:[
+            {
+                text:"What is Sirius' nickname when disguised as a dog?",
+                correctAnswers:["padfoot"]
+            },
+            {
+                text:"What item of clothing does Harry cleverly force Lucius Malfoy to give Dobby?",
+                correctAnswers:["sock", "a sock"]
+            },
+            {
+                text:"What type of animals carry post and packages in the wizarding world?",
+                correctAnswers:["owls"]
+            },
+            {
+                text:"According to Griphook, who are the only ones that can distinguish the sword of Gryffindor from the fake inside Bellatrix Lestrange's vault?",
+                correctAnswers:["goblins"]
+            },
+            {
+                text:"What type of creature does Hagrid introduce to his students during his first class?",
+                correctAnswers:["a hippogriff", "hippogriff"]
+            },
+            {
+                text:"What does Professor Trelawney see in Harry's tea leaves?",
+                correctAnswers:["the grim", "grim"]
+            },
+            {
+                text:"What are the skeletal winged horses that pull the carriages from Hogsmeade to Hogwarts?",
+                correctAnswers:["thestrals"]
+            },
+            {
+                text:"What is the name of Hagrid's half-brother?",
+                correctAnswers:["grawp"]
+            },
+            {
+                text:"What is the name of the Gringotts goblin who takes Harry to his vault for the first time?",
+                correctAnswers:["griphook"]
+            },
+            {
+                text:"What is the name of Hermione's pet cat?",
+                correctAnswers:["crookshanks"]
+            }
+        ]
     }
 ]
