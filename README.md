@@ -8,7 +8,7 @@ Live Link: https://hennasingh.github.io/Potterville/
 
 ### Strategy
 
-I have always been fond of Harry Potter book series. The books have a way of giving a magical pleasant feeling. I have had a Trivial Pursuit game for a while and thought of making a more fun digital version of it.
+I have always been fond of Harry Potter book series. The books have a way of giving a magical pleasant feeling. I have had a Trivial Pursuit game (bought from London Airport) for a while and thought of making a more fun digital version of it.
 
 <quote> The project has no prospective client, it is built for fun and engagement and learning purposes.</quote>
 
@@ -28,6 +28,21 @@ __User Goals__
  - The site is responsive and easy to navigate.
 
 
+### Scope
+
+This took a bit of time in figuring out, it was a continuous development in this as I progressed in my javascript learning. The initial setting is to have 3 pages but this may change as I develop the working version of the website:
+
+- Welcome Page: Introduction to Potterville and rules of the game
+- Game Page: The main quiz game, that starts with category options and shows spells earned on correct answers
+- End Page: Game Over Page showing spells earned and a link to restart the game.
+
+
+### Skeleton
+
+The wireframes for mobile and desktop were created using Balsamiq. These are the initial ideas but may change as I learn and progress in the actual development of the quiz
+
+
+
 
 ## Technologies Used
 
@@ -44,7 +59,7 @@ __User Goals__
 - [cwebp](https://www.npmjs.com/package/cwebp) - For converting images from jpg/png to webp formats.
 - [Balsamiq](https://balsamiq.com/) - For designing wireframes for desktop and mobile.
 
-## Deployment & Cloning
+## Deployment
 
 ### Github Pages
 
@@ -57,6 +72,18 @@ The website is deployed using Github Pages functionality provided by Github. The
 5. Under the title "Build and deployment", select the source: Deploy from a branch.
 6. Under the branch section below that, select /root folder and save.
 7. Come back to Code section of the repository. Give a few minutes and refresh the page. You will find Deployments section generated the right side with a URL to the deployed site.
+
+### Local Clones
+
+You can clone the project to deploy it locally on your own computer
+
+1. Navigate to the project repository
+2. Click on green "Code" button and local tab as shown below:
+
+![Local Clone](./assets/images/local-clones.png)
+
+3. There are 3 methods provided to clone 'HTTPS', 'SSH',or 'Github Cli' that requires you to copy the repository link and type `git clone`in your terminal (mac) or command prompt (windows) in the chosen directory.
+4. The 4th option requires you to install Github Desktop and you can open the repository in your chosen local directory.
 
 
 ## Credits
