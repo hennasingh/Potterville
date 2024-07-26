@@ -39,7 +39,7 @@ function runQuiz(quizType) {
     document.getElementById('input-container').classList.remove('hide');
     submitBtn.classList.remove('hide');
 
-    document.getElementById('scoreboard').classList.remove('hide');
+    document.getElementById('spellboard').classList.remove('hide');
     submitBtn.addEventListener('click', checkAnswer);
 
     displayQuestion();

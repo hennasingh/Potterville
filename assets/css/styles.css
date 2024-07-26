@@ -127,6 +127,7 @@ main {
 
 .game-container {
     max-width: 800px;
+    width:100%;
     background-color: rgba(233, 166, 98, 0.3);
     border-radius: 5px;
     color:#fff;
@@ -143,16 +144,22 @@ main {
     background-color:  rgba(224,133,41, 0.5);
 }
 
-#scoreboard {
+#spellboard {
     margin: 0.8em 0;
     background-color: #234372;
     padding:0.6em;
     font-weight: bold;
 }
 
-#scoreboard h4 {
+#spellboard h4 {
     letter-spacing: 2px;
    
+}
+
+#ques-title {
+    background-color: #7898ac;
+    padding:0.6em 1em;
+    color:#234372
 }
 
 #categories-container {
@@ -194,7 +201,7 @@ main {
     font-size: 1.2rem;
 }
 
-.ctrl-btn {
+.submit-btn {
     padding: 0.7em 1em;
     font-size: 1.6rem;
     font-family: inherit;
