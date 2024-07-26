@@ -88,7 +88,7 @@ main {
     margin-top: 1em;
 }
 
-/* Play Link Animation frames - from chatGPT*/
+/* Enter Potterville button Animation frames - from chatGPT*/
 @keyframes glow {
     0% { box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); }
     50% { box-shadow: 0 0 20px rgba(255, 255, 255, 1); }
@@ -131,6 +131,16 @@ main {
     border-radius: 5px;
     color:#fff;
     padding:1em;
+}
+
+/* background colors based on user answers*/
+
+.correct {
+    background-color: rgba(52, 167, 52,0.6);
+}
+
+.wrong {
+    background-color:  rgba(224,133,41, 0.5);
 }
 
 #scoreboard {
