@@ -116,16 +116,16 @@ main {
     transform: scale(1.05);
 }
 
-/* Game Page*/
+/* General Styles for game.html and end.html section containers*/
 
-#game-section {
+#game-section, #score-section {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items:center;
 }
 
-.game-container {
+.game-container, .score-container {
     max-width: 800px;
     width:100%;
     background-color: rgba(233, 166, 98, 0.3);
@@ -133,6 +133,8 @@ main {
     color:#fff;
     padding:1em;
 }
+
+/* Game Page*/
 
 /* background colors based on user answers*/
 
@@ -211,6 +213,33 @@ main {
     border: 1px solid  #e9a662;
     border-radius: 4px;
 }
+
+/* End Page */
+
+.score-container {
+    background-color: rgba(35, 67, 114, 0.7);
+}
+
+/* Glow animation for heading - chatGPT*/
+
+@keyframes glow {
+    to {
+      text-shadow: 0 0 10px #524125, 0 0 20px #524125, 0 0 30px #524125, 0 0 40px #524125, 0 0 50px #524125, 0 0 60px #524125, 0 0 70px #524125;
+    }
+  }
+
+.glow-text {
+    text-align: center;
+    text-shadow: 0 0 5px #e9a662, 0 0 10px #e9a662, 0 0 15px #e9a662, 0 0 20px #e9a662, 0 0 25px #e9a662, 0 0 30px #e9a662, 0 0 35px #e9a662;
+    animation: glow 1.5s infinite alternate;
+    margin-bottom: 1em;
+}
+
+.scores > h4{
+    padding: 0.6em;
+}
+
+
 
 /* footer */
 footer {

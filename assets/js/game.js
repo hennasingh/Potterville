@@ -35,6 +35,7 @@ for( let category of categButtons) {
 function runQuiz(quizType) {
     const quiz = questions.filter((item) => item.id == quizType)[0]
     availableQuestions = quiz.questions 
+    localStorage.setItem('category', quiz.option)
 
     document.getElementById('input-container').classList.remove('hide');
     submitBtn.classList.remove('hide');

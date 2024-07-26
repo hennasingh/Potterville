@@ -133,7 +133,7 @@ export const questions = [
             },
             {
                 text:"What is Lavender's nickname for Ron when they are seeing each other?",
-                correctAnswers:["won-won"]
+                correctAnswers:["won-won","won won"]
             }
         ]
     },
@@ -251,7 +251,7 @@ export const questions = [
             },
             {
                 text:"What type of creature does Hagrid introduce to his students during his first class?",
-                correctAnswers:["a hippogriff", "hippogriff"]
+                correctAnswers:["a hippogriff", "hippogriff", "hippogrif"]
             },
             {
                 text:"What does Professor Trelawney see in Harry's tea leaves?",
