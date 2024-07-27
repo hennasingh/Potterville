@@ -177,7 +177,7 @@ main {
     margin-top: 1em;
 }
 
-.categ-btn {
+.categ-btn, .quit-game {
     padding: 0.6em 1em;
     font-size: 1.2rem;
     background-color: #524125;
@@ -186,14 +186,6 @@ main {
     color: #fff;
     cursor: grabbing;
     
-}
-
-.hide {
-    display:none;
-}
-
-.unhide {
-    display:block;
 }
 
 #input-container {
@@ -219,6 +211,25 @@ main {
     border: 1px solid  #e9a662;
     border-radius: 4px;
 }
+
+.quit-game {
+    font-size: 1.3rem;
+    margin: 2em 0;
+}
+
+.quit-game a {
+    text-decoration: none;
+    color:#fff;
+}
+
+.hide {
+    display:none;
+}
+
+.unhide {
+    display:block;
+}
+
 
 /* End Page */
 

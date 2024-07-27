@@ -30,7 +30,12 @@ for( let category of categButtons) {
 /**
  * 
  * The function loads the questions from the selected category
- * and unhide answer input and submit options.
+ * and unhide following:
+    * input answer
+    * submit button
+    * ques-counter, timer
+    * scores
+    * quit game button
  * Add click listener to submit button
  * and calls displayQuestion function
  * Code help taken from https://www.youtube.com/watch?v=riDzcEQbX6k
@@ -47,6 +52,8 @@ function runQuiz(quizType) {
 
     document.getElementById('spellboard').classList.remove('hide');
     submitBtn.addEventListener('click', checkAnswer);
+
+    document.getElementById('quit-game').classList.remove('hide')
 
     inputAnswer.addEventListener('keydown', (event) => {
         if(event.key === "Enter") {
