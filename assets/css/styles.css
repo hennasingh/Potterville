@@ -257,7 +257,7 @@ main {
 }
 
 audio {
-    margin-top: 2em;
+    margin: 2em;
 }
 
 .reset {
@@ -275,7 +275,9 @@ audio {
     margin-top: 1em;
 }
 
-
+.scores i {
+    padding: 0 0.6em 0;
+}
 
 /* footer */
 footer {
