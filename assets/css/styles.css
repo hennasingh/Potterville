@@ -239,6 +239,10 @@ main {
     padding: 0.6em;
 }
 
+audio {
+    margin-top: 2em;
+}
+
 
 
 /* footer */
