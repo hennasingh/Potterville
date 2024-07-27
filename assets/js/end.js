@@ -12,5 +12,5 @@ document.addEventListener('DOMContentLoaded', () =>{
 })
 
 document.getElementById('play-again').addEventListener('click' , () => {
-        window.location.assign('game.html')
+        window.location.assign('index.html')
 })
