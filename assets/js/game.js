@@ -5,6 +5,7 @@ const inputAnswer = document.getElementById('answer')
 const magicSpellEarned = document.getElementById('magic-spells')
 const gameContainer = document.getElementById('game-container')
 const questCount = document.getElementById('ques-counter')
+const timer = document.getElementById('timer')
 
 //variables to hold values
 
@@ -13,9 +14,9 @@ let currentQuestion = []
 let awardedSpell = []
 let quesCounter = 0;
 let magicalSpells = ['Reducto', 'Stupify', 'Sectumsempra', 'Bombarda', 'Imperio', 'Crucio', 'Diffindo', 'Expulso', 'Confringo', 'Petrificus Totalus']
+let timeLeft = 60;
 
-//Wait for the DOM to finish loading before running the game
-//Get the button elements and add event listeners to them
+//Get the button category elements and add event listeners to them
 
 const categButtons = document.getElementsByClassName('categ-btn')
 
@@ -52,9 +53,23 @@ function runQuiz(quizType) {
             checkAnswer();
         }
     })
-
+    
+//The function to calculate timeout of 60 seconds
+//Ref: https://stackoverflow.com/questions/4435776/simple-clock-that-counts-down-from-30-seconds-and-executes-a-function-afterward
+ 
+    let timerId = setInterval(() => {
+        if(timeLeft == 0) {
+            clearTimeout(timerId)
+            calculateFinalScore();
+        } else {
+            timeLeft--
+            timer.textContent = timeLeft
+        }
+    }, 1000);
+    
     displayQuestion();
 }
+
 
 /**
  * The function selects a random question from the list and displays it on the screen for the user.
@@ -94,8 +109,7 @@ function checkAnswer() {
             gameContainer.classList.remove("correct");
 
             if (availableQuestions.length === 0) {
-                localStorage.setItem('magicalItems', JSON.stringify(awardedSpell))
-                return window.location.assign("end.html")
+                calculateFinalScore()
             }
             inputAnswer.value = ''
             displayQuestion()
@@ -108,11 +122,19 @@ function checkAnswer() {
             gameContainer.classList.remove("wrong");
 
             if (availableQuestions.length === 0) {
-                localStorage.setItem('magicalItems', JSON.stringify(awardedSpell))
-                return window.location.assign("end.html")
+                 calculateFinalScore();
             }
             inputAnswer.value = ''
             displayQuestion()
         }, 1000);
     }
+}
+
+/**
+ * 
+ * This function is called when either the timer or game finishes
+ */
+function calculateFinalScore() {
+    localStorage.setItem('magicalItems', JSON.stringify(awardedSpell));
+    return window.location.assign("end.html");
 }

@@ -146,6 +146,12 @@ main {
     background-color:  rgba(224,133,41, 0.5);
 }
 
+.ques-timer {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1em;
+}
+
 #spellboard {
     margin: 0.8em 0;
     background-color: #234372;
