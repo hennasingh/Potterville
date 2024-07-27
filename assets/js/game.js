@@ -47,6 +47,12 @@ function runQuiz(quizType) {
     document.getElementById('spellboard').classList.remove('hide');
     submitBtn.addEventListener('click', checkAnswer);
 
+    inputAnswer.addEventListener('keydown', (event) => {
+        if(event.key === "Enter") {
+            checkAnswer();
+        }
+    })
+
     displayQuestion();
 }
 
