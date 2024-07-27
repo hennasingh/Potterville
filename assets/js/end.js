@@ -9,6 +9,8 @@ document.addEventListener('DOMContentLoaded', () =>{
     magicSpellEarned.textContent = [...spells].join(', ')
     categorySpan.textContent = category
     totalScoreSpan.textContent = spells.length * 10
-    
-    
+})
+
+document.getElementById('play-again').addEventListener('click' , () => {
+        window.location.assign('game.html')
 })

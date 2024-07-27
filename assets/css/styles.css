@@ -89,7 +89,7 @@ main {
 }
 
 /* Enter Potterville button Animation frames - from chatGPT*/
-@keyframes glow {
+@keyframes magic-glow {
     0% { box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); }
     50% { box-shadow: 0 0 20px rgba(255, 255, 255, 1); }
     100% { box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); }
@@ -102,7 +102,7 @@ main {
     margin: 1em auto;
     cursor: pointer;
     text-align: center;
-    animation: glow 1.5s infinite ease-in-out;
+    animation: magic-glow 1.5s infinite ease-in-out;
     transition: transform 0.3s ease;
 }
 
@@ -241,6 +241,21 @@ main {
 
 audio {
     margin-top: 2em;
+}
+
+.reset {
+    text-align: center;
+}
+
+.play-again {
+    padding: 0.6em 1em;
+    background-color:#234372;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color:#fff;
+    border-radius: 4px;
+    border: 1px solid #fff;
+    margin-top: 1em;
 }
 
 
