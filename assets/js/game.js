@@ -4,12 +4,14 @@ const submitBtn = document.getElementById('submit')
 const inputAnswer = document.getElementById('answer')
 const magicSpellEarned = document.getElementById('magic-spells')
 const gameContainer = document.getElementById('game-container')
+const questCount = document.getElementById('ques-counter')
 
 //variables to hold values
 
 let availableQuestions = []
 let currentQuestion = []
 let awardedSpell = []
+let quesCounter = 0;
 let magicalSpells = ['Reducto', 'Stupify', 'Sectumsempra', 'Bombarda', 'Imperio', 'Crucio', 'Diffindo', 'Expulso', 'Confringo', 'Petrificus Totalus']
 
 //Wait for the DOM to finish loading before running the game
@@ -40,6 +42,8 @@ function runQuiz(quizType) {
     document.getElementById('input-container').classList.remove('hide');
     submitBtn.classList.remove('hide');
 
+    document.getElementById('ques-counter-div').classList.remove('hide');
+
     document.getElementById('spellboard').classList.remove('hide');
     submitBtn.addEventListener('click', checkAnswer);
 
@@ -57,6 +61,8 @@ function displayQuestion() {
     currentQuestion = availableQuestions.splice(random,1)[0]
 
     questionTitle.textContent = currentQuestion.text
+    quesCounter++
+    questCount.textContent = quesCounter
     
 }
 
