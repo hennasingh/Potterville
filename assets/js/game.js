@@ -79,6 +79,7 @@ function runQuiz(quizType) {
     //Ref: https://stackoverflow.com/questions/4435776/simple-clock-that-counts-down-from-30-seconds-and-executes-a-function-afterward
 
     if(document.getElementById('flipswitch').checked) {
+        localStorage.setItem('isPotterhead', true)
         document.getElementById('time-text').classList.remove('hide')
         let timerId = setInterval(() => {
             if (timeLeft == 0) {
