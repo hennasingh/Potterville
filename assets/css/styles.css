@@ -183,6 +183,12 @@ main {
     color: #234372
 }
 
+fieldset {
+    padding: 0.4em;
+    margin-top: 0.6em;
+    background-color: #234372;
+}
+
 #categories-container {
     display: grid;
     grid-template-columns: auto auto;
