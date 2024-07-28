@@ -19,7 +19,7 @@ body {
     display: flex;
     flex-direction: column;
     font-family: "MedievalSharp", cursive;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     background: url('../images/hogwartsBg.webp') no-repeat center/cover;
 }
 
