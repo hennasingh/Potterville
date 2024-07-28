@@ -25,7 +25,7 @@ let availableQuestions = []
 let currentQuestion = []
 let awardedSpell = []
 let quesCounter = 0;
-let magicalSpells = ['Reducto', 'Stupify', 'Sectumsempra', 'Bombarda', 'Imperio', 'Crucio', 'Diffindo', 'Expulso', 'Confringo', 'Petrificus Totalus']
+let magicalSpells = ['Reducto', 'Stupify', 'Sectumsempra', 'Bombarda', 'Imperio', 'Crucio', 'Fiendfyre', 'Gryffindor Sword', 'Basilisk Fang', 'Expecto Patronum']
 let timeLeft = 60;
 
 //Get the button category elements and add event listeners to them

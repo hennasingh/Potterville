@@ -1,6 +1,8 @@
 export const questions = [{
         id: 1,
         option: "The Dark Arts",
+        enemy: 'Bellatrix Lestrange',
+        spell:'any',
         questions: [{
                 text: "Who did R.A.B. instruct to destroy the locket Horcrux after his death?",
                 correctAnswers: ["kreacher"]
@@ -46,6 +48,8 @@ export const questions = [{
     {
         id: 2,
         option: "Magical Objects",
+        enemy: "Rowena Ravenclaw's Diadem",
+        spell:'fiendfyre',
         questions: [{
                 text: "What is the study of wands called?",
                 correctAnswers: ['wandlore']
@@ -91,6 +95,8 @@ export const questions = [{
     {
         id: 3,
         option: "Hogwarts",
+        enemy: 'Tom Riddle Diary',
+        spell:'basilisk fang',
         questions: [{
                 text: "How long do the champions have to wait to complete the second task of the Triwizard Tournament?",
                 correctAnswers: ["one hour", "1 hour"]
@@ -136,6 +142,8 @@ export const questions = [{
     {
         id: 4,
         option: "Magical People",
+        enemy: 'Dolores Umbridge',
+        spell:'any',
         questions: [{
                 text: "Sybill Trelawney's first prophecy speaks of a boy born at the end of which month?",
                 correctAnswers: ["july", "7th", "seventh"]
@@ -181,6 +189,8 @@ export const questions = [{
     {
         id: 5,
         option: "Magical Spells & Potions",
+        enemy: 'Dementors',
+        spell: 'expecto patronum',
         questions: [{
                 text: "What potion does Professor Umbridge want to use to make Harry tell her Dumbledore's whereabouts?",
                 correctAnswers: ["veritaserum"]
@@ -226,6 +236,8 @@ export const questions = [{
     {
         id: 6,
         option: "Animals & Magical Creatures",
+        enemy:'Nagini',
+        spell:'gryffindor sword',
         questions: [{
                 text: "What is Sirius' nickname when disguised as a dog?",
                 correctAnswers: ["padfoot"]
