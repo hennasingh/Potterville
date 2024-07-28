@@ -8,6 +8,7 @@ const magicSpellEarned = document.getElementById('magic-spells')
 const gameContainer = document.getElementById('game-container')
 const questCount = document.getElementById('ques-counter')
 const timer = document.getElementById('timer')
+const checkboxContainer = document.getElementById('checkbox-timer')
 
 /**
  * variables to hold values for
@@ -66,6 +67,8 @@ function runQuiz(quizType) {
 
     document.getElementById('quit-game').classList.remove('hide')
 
+    checkboxContainer.classList.add('hide')
+
     inputAnswer.addEventListener('keydown', (event) => {
         if (event.key === "Enter") {
             checkAnswer();
@@ -75,16 +78,18 @@ function runQuiz(quizType) {
     //The function to calculate timeout of 60 seconds
     //Ref: https://stackoverflow.com/questions/4435776/simple-clock-that-counts-down-from-30-seconds-and-executes-a-function-afterward
 
-    let timerId = setInterval(() => {
-        if (timeLeft == 0) {
-            clearTimeout(timerId)
-            calculateFinalScore();
-        } else {
-            timeLeft--
-            timer.textContent = timeLeft
-        }
-    }, 1000);
-
+    if(document.getElementById('flipswitch').checked) {
+        document.getElementById('time-text').classList.remove('hide')
+        let timerId = setInterval(() => {
+            if (timeLeft == 0) {
+                clearTimeout(timerId)
+                calculateFinalScore();
+            } else {
+                timeLeft--
+                timer.textContent = timeLeft
+            }
+        }, 1000);
+    }
     displayQuestion();
 }
 
