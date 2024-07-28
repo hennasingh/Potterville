@@ -1,15 +1,17 @@
 /* Asterik wildcard selector to override default styles added by the browser*/
 
 * {
-    padding:0;
-    margin:0;
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
+
 /* Harry Potter Font*/
 @font-face {
     font-family: 'HarryPotter';
     src: url('../fonts/HarryPotter-ov4z.ttf') format('truetype');
 }
+
 /* General Styles*/
 
 body {
@@ -17,14 +19,14 @@ body {
     display: flex;
     flex-direction: column;
     font-family: "MedievalSharp", cursive;
-    font-size:1.3rem;
+    font-size: 1.3rem;
     background: url('../images/hogwartsBg.webp') no-repeat center/cover;
 }
 
 /* header*/
-header{
+header {
     text-align: center;
-    color:#fff;
+    color: #fff;
 }
 
 h1 {
@@ -39,7 +41,8 @@ h2 {
     font-size: 2rem;
 }
 
-/* main content*/
+/* General main content styles for all pages */
+
 main {
     flex: 1 0 auto;
     margin-top: 100px;
@@ -54,7 +57,7 @@ main {
 
 .accordion {
     background-color: #234372;
-    color:#fff;
+    color: #fff;
     cursor: pointer;
     padding: 1em;
     transition: 0.4s;
@@ -67,13 +70,13 @@ main {
 
 .panel {
     padding: 1.2em;
-    display:none;
+    display: none;
     overflow: hidden;
-    color:#fff;
-    background-color: rgba(60,60,60,0.6);
+    color: #fff;
+    background-color: rgba(60, 60, 60, 0.6);
 }
 
-.panel > p {
+.panel>p {
     padding-bottom: 1em;
 }
 
@@ -81,7 +84,7 @@ main {
     padding-left: 0.8em;
 }
 
-.panel > div {
+.panel>div {
     display: flex;
     flex-direction: column;
     gap: 1em;
@@ -90,15 +93,23 @@ main {
 
 /* Enter Potterville button Animation frames - from chatGPT*/
 @keyframes magic-glow {
-    0% { box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); }
-    50% { box-shadow: 0 0 20px rgba(255, 255, 255, 1); }
-    100% { box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); }
+    0% {
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    }
+
+    50% {
+        box-shadow: 0 0 20px rgba(255, 255, 255, 1);
+    }
+
+    100% {
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    }
 }
 
 .play-container {
     padding: 0.8em;
     background-color: rgba(35, 67, 114, 0.8);
-    width:50%;
+    width: 50%;
     margin: 1em auto;
     cursor: pointer;
     text-align: center;
@@ -106,9 +117,9 @@ main {
     transition: transform 0.3s ease;
 }
 
-.play-link { 
+.play-link {
     text-decoration: none;
-    color:#e9a662;
+    color: #e9a662;
     font-size: 1.6rem;
 }
 
@@ -118,20 +129,22 @@ main {
 
 /* General Styles for game.html and end.html section containers*/
 
-#game-section, #score-section {
+#game-section,
+#score-section {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items:center;
+    align-items: center;
 }
 
-.game-container, .score-container {
+.game-container,
+.score-container {
     max-width: 800px;
-    width:100%;
+    width: 100%;
     background-color: rgba(233, 166, 98, 0.3);
     border-radius: 5px;
-    color:#fff;
-    padding:1em;
+    color: #fff;
+    padding: 1em;
 }
 
 /* Game Page*/
@@ -139,11 +152,11 @@ main {
 /* background colors based on user answers*/
 
 .correct {
-    background-color: rgba(52, 167, 52,0.6);
+    background-color: rgba(52, 167, 52, 0.6);
 }
 
 .wrong {
-    background-color:  rgba(224,133,41, 0.5);
+    background-color: rgba(224, 133, 41, 0.5);
 }
 
 .ques-timer {
@@ -155,29 +168,30 @@ main {
 #spellboard {
     margin: 0.8em 0;
     background-color: #234372;
-    padding:0.6em;
+    padding: 0.6em;
     font-weight: bold;
 }
 
 #spellboard h4 {
     letter-spacing: 2px;
-   
+
 }
 
 #ques-title {
     background-color: #7898ac;
-    padding:0.6em 1em;
-    color:#234372
+    padding: 0.6em 1em;
+    color: #234372
 }
 
 #categories-container {
-    display:grid;
+    display: grid;
     grid-template-columns: auto auto;
     gap: 1em;
     margin-top: 1em;
 }
 
-.categ-btn, .quit-game {
+.categ-btn,
+.quit-game {
     padding: 0.6em 1em;
     font-size: 1.2rem;
     background-color: #524125;
@@ -185,18 +199,18 @@ main {
     border-radius: 4px;
     color: #fff;
     cursor: grabbing;
-    
+
 }
 
 #input-container {
-   margin-top: 1em;
+    margin-top: 1em;
 }
 
 #answer {
     padding: 0.7em;
-    background-color: rgb(255,255,255, 0.4);
+    background-color: rgb(255, 255, 255, 0.4);
     border: 2px solid #e9a662;
-    color:#524125;
+    color: #524125;
     font-weight: bold;
     font-size: 1.2rem;
 }
@@ -206,9 +220,9 @@ main {
     font-size: 1.6rem;
     font-family: inherit;
     margin-top: 1em;
-    background-color:#524125;
-    color:#fff;
-    border: 1px solid  #e9a662;
+    background-color: #524125;
+    color: #fff;
+    border: 1px solid #e9a662;
     border-radius: 4px;
 }
 
@@ -219,15 +233,15 @@ main {
 
 .quit-game a {
     text-decoration: none;
-    color:#fff;
+    color: #fff;
 }
 
 .hide {
-    display:none;
+    display: none;
 }
 
 .unhide {
-    display:block;
+    display: block;
 }
 
 
@@ -241,9 +255,9 @@ main {
 
 @keyframes glow {
     to {
-      text-shadow: 0 0 10px #524125, 0 0 20px #524125, 0 0 30px #524125, 0 0 40px #524125, 0 0 50px #524125, 0 0 60px #524125, 0 0 70px #524125;
+        text-shadow: 0 0 10px #524125, 0 0 20px #524125, 0 0 30px #524125, 0 0 40px #524125, 0 0 50px #524125, 0 0 60px #524125, 0 0 70px #524125;
     }
-  }
+}
 
 .glow-text {
     text-align: center;
@@ -252,7 +266,7 @@ main {
     margin-bottom: 1em;
 }
 
-.scores > h4{
+.scores>h4 {
     padding: 0.6em;
 }
 
@@ -266,10 +280,10 @@ audio {
 
 .play-again {
     padding: 0.6em 1em;
-    background-color:#234372;
+    background-color: #234372;
     font-size: 1.5rem;
     cursor: pointer;
-    color:#fff;
+    color: #fff;
     border-radius: 4px;
     border: 1px solid #fff;
     margin-top: 1em;
@@ -282,7 +296,7 @@ audio {
 /* footer */
 footer {
     background: url('../images/backgroundPoster.webp') no-repeat center/cover;
-    color:#fff;
+    color: #fff;
     line-height: 3em;
     text-align: center;
 }

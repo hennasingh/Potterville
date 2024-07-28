@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Meta tags for search engines-->
-    <meta name="description" content="Potterville. Harry Potter themed quiz. Animations, witch, wizards, Hogwarts. The Dark arts, Magical objects and people">
-    <meta name="keywords" content="Harry Potter, Trivial Pursuit, quiz, potterville, magic, dungeons, wands, spells, charms, potions">
-     <!--Title-->
+    <meta name="description"
+        content="Potterville. Harry Potter themed quiz. Animations, witch, wizards, Hogwarts. The Dark arts, Magical objects and people">
+    <meta name="keywords"
+        content="Harry Potter, Trivial Pursuit, quiz, potterville, magic, dungeons, wands, spells, charms, potions">
+    <!--Title-->
     <title>Potterville</title>
     <!--Favicon-->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
@@ -19,6 +22,7 @@
     <!-- styles.css-->
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
+
 <body>
     <header>
         <div>
@@ -33,62 +37,69 @@
                 <button class="accordion">Welcome to Potterville</button>
                 <div class="panel">
                     <p>
-                        Step into the enchanting world of magic, where wands choose their wizards, mythical creatures roam, and 
-                        extraordinary adventures await. From the cobblestone streets of Diagon Alley to the hallowed halls of Hogwarts
-                        School of Witchcraft and Wizardry, the Wizarding World has captivated the hearts and imaginations of millions.
+                        Step into the enchanting world of magic, where wands choose their wizards, mythical creatures
+                        roam, and
+                        extraordinary adventures await. From the cobblestone streets of Diagon Alley to the hallowed
+                        halls of Hogwarts
+                        School of Witchcraft and Wizardry, the Wizarding World has captivated the hearts and
+                        imaginations of millions.
                     </p>
                     <p>
-                        Join us on a journey through this magical universe. Test your knowledge on spells, potions, magical creatures, 
-                        and the heroic tales of Harry Potter and his friends. 
+                        Join us on a journey through this magical universe. Test your knowledge on spells, potions,
+                        magical creatures,
+                        and the heroic tales of Harry Potter and his friends.
                         Are you ready to prove your prowess and show that you're a true Potterhead? Let the magic begin!
                     </p>
                 </div>
                 <button class="accordion">Rules of the game</button>
                 <div class="panel">
                     <p>
-                        Potterville is a word answer game where you will be asked questions about the Harry Potter world. 
-                        You will be prompted to choose a category before you start the quiz. There will be 10 questions in the quiz.
-                    <ul>
-                        <li>The Dark Arts</li>
-                        <li>Hogwarts</li>
-                        <li>Magical Spells and Potions</li>
-                        <li>Magical Objects</li>
-                        <li>Magical People</li>
-                        <li>Animals & Magical Creatures</li>
-                    </ul>
+                        Potterville is a word answer game where you will be asked questions about the Harry Potter
+                        world.
+                        You will be prompted to choose a category before you start the quiz. There will be 10 questions
+                        in the quiz.
+                        <ul>
+                            <li>The Dark Arts</li>
+                            <li>Hogwarts</li>
+                            <li>Magical Spells and Potions</li>
+                            <li>Magical Objects</li>
+                            <li>Magical People</li>
+                            <li>Animals & Magical Creatures</li>
+                        </ul>
                     </p>
                     <p>
-                        You will be given a random enemy to fight with. Your enemy starts at 100 power. 
-                        Each correct answer will earn you a magical item that can help you defeat your enemy. You win the game if you are
+                        You will be given a random enemy to fight with. Your enemy starts at 100 power.
+                        Each correct answer will earn you a magical item that can help you defeat your enemy. You win
+                        the game if you are
                         successful in defeating the enemy.
                     </p>
                 </div>
                 <div class="play-container">
                     <a class="play-link" href="game.html" id="play-link">Enter Potterville</a>
-                </div>               
+                </div>
             </div>
         </section>
     </main>
-    
+
     <footer>
         <h4>Created with <i class="fa-solid fa-heart"></i> by Henna Singh</h4>
     </footer>
-    
+
     <!-- Font Awesome kit-->
     <script src="https://kit.fontawesome.com/36941e59c7.js" crossorigin="anonymous"></script>
-    
+
     <script>
         let accordions = document.getElementsByClassName("accordion");
         /**
          * Adding Click listener to each section 
          * of the accordion class item.
          */
-        for(let acc of accordions) {
-            acc.addEventListener('click', function() {
+        for (let acc of accordions) {
+            acc.addEventListener('click', function () {
 
                 /* Toggle between hiding and showing the active panel */
                 let panel = this.nextElementSibling;
-                if(panel.style.display === "block") {
+                if (panel.style.display === "block") {
                     panel.style.display = "none";
                 } else {
                     panel.style.display = "block";
@@ -97,4 +108,5 @@
         }
     </script>
 </body>
+
 </html>

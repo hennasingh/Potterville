@@ -1,4 +1,6 @@
-import { questions } from "./questions.js";
+import {
+    questions
+} from "./questions.js";
 const questionTitle = document.getElementById('ques-title')
 const submitBtn = document.getElementById('submit')
 const inputAnswer = document.getElementById('answer')
@@ -7,7 +9,16 @@ const gameContainer = document.getElementById('game-container')
 const questCount = document.getElementById('ques-counter')
 const timer = document.getElementById('timer')
 
-//variables to hold values
+/**
+ * variables to hold values for
+ * 
+ *  availableQuestions (retrieved after category is selected)
+ * currentQuestion (the ques displayed on screen)
+ * awardedSoell (the spell earned by the gamer )
+ * quesCounter (the question number on screen )
+ * magicalSpells (the array of available spells)
+ * timeLeft (60 seconds timer for the whole category for advanced gamers )
+ */
 
 let availableQuestions = []
 let currentQuestion = []
@@ -20,8 +31,8 @@ let timeLeft = 60;
 
 const categButtons = document.getElementsByClassName('categ-btn')
 
-for( let category of categButtons) {
-    category.addEventListener('click', function() {
+for (let category of categButtons) {
+    category.addEventListener('click', function () {
         let quizType = this.getAttribute('data-type')
         document.getElementById('categories-container').style.display = "none";
         runQuiz(quizType)
@@ -31,18 +42,18 @@ for( let category of categButtons) {
  * 
  * The function loads the questions from the selected category
  * and unhide following:
-    * input answer
-    * submit button
-    * ques-counter, timer
-    * scores
-    * quit game button
+ * input answer
+ * submit button
+ * ques-counter, timer
+ * scores
+ * quit game button
  * Add click listener to submit button
  * and calls displayQuestion function
  * Code help taken from https://www.youtube.com/watch?v=riDzcEQbX6k
  */
 function runQuiz(quizType) {
     const quiz = questions.filter((item) => item.id == quizType)[0]
-    availableQuestions = quiz.questions 
+    availableQuestions = quiz.questions
     localStorage.setItem('category', quiz.option)
 
     document.getElementById('input-container').classList.remove('hide');
@@ -56,16 +67,16 @@ function runQuiz(quizType) {
     document.getElementById('quit-game').classList.remove('hide')
 
     inputAnswer.addEventListener('keydown', (event) => {
-        if(event.key === "Enter") {
+        if (event.key === "Enter") {
             checkAnswer();
         }
     })
-    
-//The function to calculate timeout of 60 seconds
-//Ref: https://stackoverflow.com/questions/4435776/simple-clock-that-counts-down-from-30-seconds-and-executes-a-function-afterward
- 
+
+    //The function to calculate timeout of 60 seconds
+    //Ref: https://stackoverflow.com/questions/4435776/simple-clock-that-counts-down-from-30-seconds-and-executes-a-function-afterward
+
     let timerId = setInterval(() => {
-        if(timeLeft == 0) {
+        if (timeLeft == 0) {
             clearTimeout(timerId)
             calculateFinalScore();
         } else {
@@ -73,7 +84,7 @@ function runQuiz(quizType) {
             timer.textContent = timeLeft
         }
     }, 1000);
-    
+
     displayQuestion();
 }
 
@@ -86,12 +97,12 @@ function runQuiz(quizType) {
  */
 function displayQuestion() {
     let random = Math.floor(Math.random() * availableQuestions.length);
-    currentQuestion = availableQuestions.splice(random,1)[0]
+    currentQuestion = availableQuestions.splice(random, 1)[0]
 
     questionTitle.textContent = currentQuestion.text
     quesCounter++
     questCount.textContent = quesCounter
-    
+
 }
 
 /**
@@ -105,12 +116,12 @@ function displayQuestion() {
 
 function checkAnswer() {
     const userAnswer = inputAnswer.value
-    if(currentQuestion.correctAnswers.includes(userAnswer.trim().toLowerCase())) {
+    if (currentQuestion.correctAnswers.includes(userAnswer.trim().toLowerCase())) {
         gameContainer.classList.add('correct');
 
         setTimeout(() => {
             let random = Math.floor(Math.random() * magicalSpells.length);
-            awardedSpell.push(magicalSpells.splice(random,1)[0]);
+            awardedSpell.push(magicalSpells.splice(random, 1)[0]);
 
             magicSpellEarned.textContent = [...awardedSpell].join(', ');
             gameContainer.classList.remove("correct");
@@ -129,7 +140,7 @@ function checkAnswer() {
             gameContainer.classList.remove("wrong");
 
             if (availableQuestions.length === 0) {
-                 calculateFinalScore();
+                calculateFinalScore();
             }
             inputAnswer.value = ''
             displayQuestion()
