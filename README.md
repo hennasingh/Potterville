@@ -1,6 +1,6 @@
 # Potterville - Trivial Pursuit
 
-The project is Harry Potter themed quiz. The app is built using HTML5, CSS3, JavaScript for the Milestone 2 project of Code Institute's Full Stack Development diploma.
+Potterville is a brief insight into magical Harry Potter series. The quiz app is built using HTML5, CSS3, JavaScript for the Milestone 2 project of Code Institute's Full Stack Development diploma.
 
 Live Link: https://hennasingh.github.io/Potterville/
 
@@ -14,8 +14,9 @@ I have always been fond of Harry Potter book series. The books have a way of giv
 
 __User Stories__
 - I want to be able to understand the purpose of the site.
-- I want to be able to see the time I take to finish the game.
-- I want to be able to see my score as I move along in the game.
+- I want to be able to choose categories within Harry Potter series.
+- I want to be able to challenge myself and time my game.
+- I want to be able to see my magical quotient at the end of the game.
 - I want to be able to see magical items I collected.
 
 __User Goals__
@@ -25,6 +26,7 @@ __User Goals__
  __Site Owner Goals__
  - Create a fun, interactive and engaging game.
  - Design the game to be visually appealing.
+ - Add an extra challenge for Harry Potter fans aka Potterheads.
  - The site is responsive and easy to navigate.
 
 
@@ -34,7 +36,7 @@ This took a bit of time in figuring out, it was a continuous development in this
 
 - Welcome Page: Introduction to Potterville and rules of the game
 - Game Page: The main quiz game, that starts with category options and shows spells earned on correct answers
-- End Page: Game Over Page showing spells earned and a link to restart the game.
+- End Page: Game Over Page showing magical quotient and a link to restart the game.
 
 
 ### Skeleton
@@ -42,6 +44,31 @@ This took a bit of time in figuring out, it was a continuous development in this
 The wireframes for mobile and desktop were created using Balsamiq. These are the initial ideas but may change as I learn and progress in the actual development of the quiz
 
 
+## User  Interface - Design
+
+### Typography
+
+Font suggestions were taken from chatGPT. Harry Potter font was downloaded from font-space while MedievalSharp font was taken from Google Fonts.
+
+### Colors
+
+Color Scheme suggestions were taken from [Coolers](coolers.co) on uploading the Hogwarts background image.
+
+<details><summary>Color Palette</summary>
+
+![color-palette](./assets/readMeFiles/colorPalette.png)
+
+</details>
+
+## Future Implementations
+
+1. In the next version of the quiz, I would like to add a battleground along with answering the quiz questions. Each spell earned can be used to hit the enemy to reduce their power, as it shows in the design wireframe.
+
+2. In the next version, the website will take user details (name) and offers to sort into house using Sorting Hat as per the design wireframe.
+
+3. In the next version of the website, there will be a restriction to play the same category again.
+
+4. In the next version of the website, user scores will be saved and a leaderboard will be shown.
 
 
 ## Technologies Used
@@ -58,6 +85,12 @@ The wireframes for mobile and desktop were created using Balsamiq. These are the
 - [chatGPT](https://chat.openai.com/) - For content on description, and css animations.
 - [cwebp](https://www.npmjs.com/package/cwebp) - For converting images from jpg/png to webp formats.
 - [Balsamiq](https://balsamiq.com/) - For designing wireframes for desktop and mobile.
+- [Font Awesome](https://fontawesome.com/icons) - For icons in the footer, magic wand and timer challenge.
+
+
+## Testing
+
+The testing details for the website can be found in [testing.md](testing.md)
 
 ## Deployment
 
