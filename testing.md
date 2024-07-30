@@ -6,7 +6,7 @@ This page contains all the testing details the website was run through to produc
 
 ### W3C Validator
 
-HTML and CSS code for the website were tested and validated by using [HTML Validator](https://validator.w3.org/#validate_by_input) and [CSS Validator](https://jigsaw.w3.org/css-validator/)
+HTML and CSS code for the website were tested and validated by using [HTML Validator](https://validator.w3.org/#validate_by_input) and [Jigsaw CSS Validator](https://jigsaw.w3.org/css-validator/)
 
 
 __HTML Validation__
@@ -15,6 +15,8 @@ __HTML Validation__
 
 <details>
     <summary>index.html</summary>
+
+![HTML Validation for Index Page](assets/readMeFiles/indexHtmlValidate.png)
 </details>
 
 
@@ -43,4 +45,24 @@ __CSS Validation__
     <summary>Styles.css</summary>
 
 ![CSS Validation for Stylesheet](assets/readMeFiles/stylesCssValidate.png)
+</details>
+
+__JavaScript Validation__
+
+The javascript validation was done using [JSHint](https://jshint.com/)
+
+1. There were warnings on missing semicolon and they were fixed. I had to ignore the warning on function as it was designed to be that way.
+
+<details>
+<summary>game.js</summary>
+
+![JS Validation for game.js file](assets/readMeFiles/gameJSValidate.png)
+</details>
+
+2. There were semi-colon warnings for end.js as well and those were fixed.
+
+<details>
+    <summary>end.js</summary>
+
+![JS Validation for end.js file](assets/readMeFiles/endJSValidate.png)
 </details>

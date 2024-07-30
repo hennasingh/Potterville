@@ -1,14 +1,14 @@
 import {
     questions
 } from "./questions.js";
-const questionTitle = document.getElementById('ques-title')
-const submitBtn = document.getElementById('submit')
-const inputAnswer = document.getElementById('answer')
-const magicSpellEarned = document.getElementById('magic-spells')
-const gameContainer = document.getElementById('game-container')
-const questCount = document.getElementById('ques-counter')
-const timer = document.getElementById('timer')
-const checkboxContainer = document.getElementById('checkbox-timer')
+const questionTitle = document.getElementById('ques-title');
+const submitBtn = document.getElementById('submit');
+const inputAnswer = document.getElementById('answer');
+const magicSpellEarned = document.getElementById('magic-spells');
+const gameContainer = document.getElementById('game-container');
+const questCount = document.getElementById('ques-counter');
+const timer = document.getElementById('timer');
+const checkboxContainer = document.getElementById('checkbox-timer');
 
 /**
  * variables to hold values for
@@ -21,23 +21,23 @@ const checkboxContainer = document.getElementById('checkbox-timer')
  * timeLeft (60 seconds timer for the whole category for advanced gamers )
  */
 
-let availableQuestions = []
-let currentQuestion = []
-let awardedSpell = []
+let availableQuestions = [];
+let currentQuestion = [];
+let awardedSpell = [];
 let quesCounter = 0;
-let magicalSpells = ['Reducto', 'Stupify', 'Sectumsempra', 'Bombarda', 'Imperio', 'Crucio', 'Fiendfyre', 'Gryffindor Sword', 'Basilisk Fang', 'Expecto Patronum']
+let magicalSpells = ['Reducto', 'Stupify', 'Sectumsempra', 'Bombarda', 'Imperio', 'Crucio', 'Fiendfyre', 'Gryffindor Sword', 'Basilisk Fang', 'Expecto Patronum'];
 let timeLeft = 60;
 
 //Get the button category elements and add event listeners to them
 
-const categButtons = document.getElementsByClassName('categ-btn')
+const categButtons = document.getElementsByClassName('categ-btn');
 
 for (let category of categButtons) {
     category.addEventListener('click', function () {
-        let quizType = this.getAttribute('data-type')
+        let quizType = this.getAttribute('data-type');
         document.getElementById('categories-container').style.display = "none";
-        runQuiz(quizType)
-    })
+        runQuiz(quizType);
+    });
 }
 /**
  * 
@@ -53,9 +53,9 @@ for (let category of categButtons) {
  * Code help taken from https://www.youtube.com/watch?v=riDzcEQbX6k
  */
 function runQuiz(quizType) {
-    const quiz = questions.filter((item) => item.id == quizType)[0]
-    availableQuestions = quiz.questions
-    localStorage.setItem('category', quiz.option)
+    const quiz = questions.filter((item) => item.id == quizType)[0];
+    availableQuestions = quiz.questions;
+    localStorage.setItem('category', quiz.option);
 
     document.getElementById('input-container').classList.remove('hide');
     submitBtn.classList.remove('hide');
@@ -65,29 +65,29 @@ function runQuiz(quizType) {
     document.getElementById('spellboard').classList.remove('hide');
     submitBtn.addEventListener('click', checkAnswer);
 
-    document.getElementById('quit-game').classList.remove('hide')
+    document.getElementById('quit-game').classList.remove('hide');
 
-    checkboxContainer.classList.add('hide')
+    checkboxContainer.classList.add('hide');
 
     inputAnswer.addEventListener('keydown', (event) => {
         if (event.key === "Enter") {
             checkAnswer();
         }
-    })
+    });
 
     //The function to calculate timeout of 60 seconds
     //Ref: https://stackoverflow.com/questions/4435776/simple-clock-that-counts-down-from-30-seconds-and-executes-a-function-afterward
 
     if(document.getElementById('flipswitch').checked) {
-        localStorage.setItem('isPotterhead', true)
-        document.getElementById('time-text').classList.remove('hide')
+        localStorage.setItem('isPotterhead', true);
+        document.getElementById('time-text').classList.remove('hide');
         let timerId = setInterval(() => {
             if (timeLeft == 0) {
-                clearTimeout(timerId)
+                clearTimeout(timerId);
                 calculateFinalScore();
             } else {
-                timeLeft--
-                timer.textContent = timeLeft
+                timeLeft--;
+                timer.textContent = timeLeft;
             }
         }, 1000);
     }
@@ -103,11 +103,11 @@ function runQuiz(quizType) {
  */
 function displayQuestion() {
     let random = Math.floor(Math.random() * availableQuestions.length);
-    currentQuestion = availableQuestions.splice(random, 1)[0]
+    currentQuestion = availableQuestions.splice(random, 1)[0];
 
-    questionTitle.textContent = currentQuestion.text
-    quesCounter++
-    questCount.textContent = quesCounter
+    questionTitle.textContent = currentQuestion.text;
+    quesCounter++;
+    questCount.textContent = quesCounter;
 
 }
 
@@ -121,7 +121,7 @@ function displayQuestion() {
  */
 
 function checkAnswer() {
-    const userAnswer = inputAnswer.value
+    const userAnswer = inputAnswer.value;
     if (currentQuestion.correctAnswers.includes(userAnswer.trim().toLowerCase())) {
         gameContainer.classList.add('correct');
 
@@ -133,10 +133,10 @@ function checkAnswer() {
             gameContainer.classList.remove("correct");
 
             if (availableQuestions.length === 0) {
-                calculateFinalScore()
+                calculateFinalScore();
             }
-            inputAnswer.value = ''
-            displayQuestion()
+            inputAnswer.value = '';
+            displayQuestion();
         }, 1000);
 
     } else {
@@ -148,8 +148,8 @@ function checkAnswer() {
             if (availableQuestions.length === 0) {
                 calculateFinalScore();
             }
-            inputAnswer.value = ''
-            displayQuestion()
+            inputAnswer.value = '';
+            displayQuestion();
         }, 1000);
     }
 }
