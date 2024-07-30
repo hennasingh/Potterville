@@ -6,6 +6,7 @@ const potterhead = document.getElementById('isPotterhead');
 const spells = JSON.parse(localStorage.getItem('magicalItems'));
 const category = localStorage.getItem('category');
 const isPotterhead = localStorage.getItem('isPotterhead');
+console.log(isPotterhead)
 
 /**
  * The function is run when the page is loaded.
@@ -19,5 +20,12 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 document.getElementById('play-again').addEventListener('click', () => {
+    clearStorage();
     window.location.assign('game.html');
 });
+
+function clearStorage() {
+    localStorage.removeItem('magicalItems');
+    localStorage.removeItem('category');
+    localStorage.removeItem('isPotterhead');
+}
