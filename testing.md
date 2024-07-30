@@ -77,7 +77,15 @@ The javascript validation was done using [JSHint](https://jshint.com/)
 ![JS Validation for game.js file](assets/readMeFiles/gameJSValidate.png)
 </details>
 
-2. There were semi-colon warnings for end.js as well and those were fixed.
+2. One semi colon warning on questions.js file which was fixed
+
+<details>
+    <summary>questions.js</summary>
+    
+![JS Validation for questions.js file](assets/readMeFiles/quesJSValidate.png)
+</details>
+
+3. There were semi-colon warnings for end.js as well and those were fixed.
 
 <details>
     <summary>end.js</summary>
