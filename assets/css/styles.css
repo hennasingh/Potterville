@@ -291,7 +291,7 @@ audio {
     padding: 0.6em 1em;
     background-color: #234372;
     font-size: 1.5rem;
-    cursor: pointer;
+    cursor: grab;
     color: #fff;
     border-radius: 4px;
     border: 1px solid #fff;
@@ -315,9 +315,10 @@ audio {
     padding: 0.6em;
 }
 
-.take-home a {
+.take-home {
     text-decoration: none;
     color:#fff;
+    display: inline-block;
 }
 
 /* footer */

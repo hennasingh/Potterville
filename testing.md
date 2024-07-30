@@ -36,6 +36,23 @@ __HTML Validation__
 </details>
 
 
+4. The HTML Validation for the 404 HTML page showed an error. This was a new learning for me and I was not aware that anchor tag could not be a descendant of a button.
+
+<details>
+    <summary>404.html page with errors</summary>
+
+![404 HTML Page with errors](assets/readMeFiles/page404HtmlValidateErrors.png)    
+</details>
+
+
+4.1 The 404 HTML Page was fixed by removing button and using div tag instead as a wrapper of anchor tag.
+
+<details>
+    <summary>404.html Page without errors</summary>
+
+![404 HTML Page without errors](assets/readMeFiles/page404HtmlValidate.png)
+</details>
+
 
 __CSS Validation__
 
@@ -46,6 +63,7 @@ __CSS Validation__
 
 ![CSS Validation for Stylesheet](assets/readMeFiles/stylesCssValidate.png)
 </details>
+
 
 __JavaScript Validation__
 
