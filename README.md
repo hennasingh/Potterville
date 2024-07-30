@@ -41,10 +41,23 @@ This took a bit of time in figuring out, it was a continuous development in this
 
 ### Skeleton
 
-The wireframes for mobile and desktop were created using Balsamiq. These are the initial ideas but may change as I learn and progress in the actual development of the quiz
+The wireframes for mobile and desktop were created using Balsamiq. These were the original ideas but they changed as I learned and progressed in the actual development of the quiz. Some of the features will be implemented in future versions.
+
+<details>
+    <summary>Desktop Wireframes</summary>
+
+![Desktop Wireframes](./assets/readMeFiles/desktopWireframes.png)
+
+</details>
+
+<details>
+    <summary>Phone Wireframes</summary>
+
+![Phone Wireframes](./assets/readMeFiles/phoneWireframes.png)
+</details>
 
 
-## User  Interface - Design
+## User  Interface - Surface
 
 ### Typography
 
@@ -113,7 +126,7 @@ You can clone the project to deploy it locally on your own computer
 1. Navigate to the project repository
 2. Click on green "Code" button and local tab as shown below:
 
-![Local Clone](./assets/images/local-clones.png)
+![Local Clone](assets/readMeFiles/localClones.png)
 
 3. There are 3 methods provided to clone 'HTTPS', 'SSH',or 'Github Cli' that requires you to copy the repository link and type `git clone`in your terminal (mac) or command prompt (windows) in the chosen directory.
 4. The 4th option requires you to install Github Desktop and you can open the repository in your chosen local directory.
