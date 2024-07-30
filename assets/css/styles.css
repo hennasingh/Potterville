@@ -127,10 +127,11 @@ main {
     transform: scale(1.05);
 }
 
-/* General Styles for game.html and end.html section containers*/
+/* General Styles for game.html, end.html and 404.html section containers*/
 
 #game-section,
-#score-section {
+#score-section,
+#section-404 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -284,7 +285,9 @@ audio {
     text-align: center;
 }
 
-.play-again {
+/* General Style for both End Page and 404 Page Button */
+
+.play-again, .take-home {
     padding: 0.6em 1em;
     background-color: #234372;
     font-size: 1.5rem;
@@ -297,6 +300,24 @@ audio {
 
 .scores i {
     padding: 0 0.6em 0;
+}
+
+/* 404 Page */
+#section-404 {
+    margin-top: 3em;
+}
+
+.error-div{
+  text-align: center;
+}
+
+.error-div h4 {
+    padding: 0.6em;
+}
+
+.take-home a {
+    text-decoration: none;
+    color:#fff;
 }
 
 /* footer */
