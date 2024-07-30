@@ -6,7 +6,6 @@ const potterhead = document.getElementById('isPotterhead');
 const spells = JSON.parse(localStorage.getItem('magicalItems'));
 const category = localStorage.getItem('category');
 const isPotterhead = localStorage.getItem('isPotterhead');
-console.log(isPotterhead)
 
 /**
  * The function is run when the page is loaded.

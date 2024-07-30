@@ -21,7 +21,7 @@ export const questions = [{
             },
             {
                 text: "According to Professor Slughorn, what is the purpose of a Horcrux? a)Immortality, b)Power, c)Victory?",
-                correctAnswers: ["a)immortality", "immortality"]
+                correctAnswers: ["a)immortality", "immortality" , "a)", "a"]
             },
             {
                 text: "Who destroys the locket Horcrux?",
