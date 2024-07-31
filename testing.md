@@ -9,7 +9,8 @@ This page contains all the testing details the website was run through to produc
 HTML and CSS code for the website were tested and validated by using [HTML Validator](https://validator.w3.org/#validate_by_input) and [Jigsaw CSS Validator](https://jigsaw.w3.org/css-validator/)
 
 
-__HTML Validation__
+#### HTML Validation
+<hr>
 
 1. The HTML Validation for index page showed errors on first try, those were on section without heading . That was corrected and the test passed
 
@@ -45,7 +46,7 @@ __HTML Validation__
 </details>
 
 
-4.1 The 404 HTML Page was fixed by removing button and using div tag instead as a wrapper of anchor tag.
+4. The 404 HTML Page was fixed by removing button and using div tag instead as a wrapper of anchor tag.
 
 <details>
     <summary>404.html Page without errors</summary>
@@ -54,7 +55,8 @@ __HTML Validation__
 </details>
 
 
-__CSS Validation__
+#### CSS Validation
+<hr>
 
 1. There was one file for CSS that passed validation in the first try
 
@@ -65,11 +67,20 @@ __CSS Validation__
 </details>
 
 
-__JavaScript Validation__
+#### JavaScript Validation
+<hr>
 
 The javascript validation was done using [JSHint](https://jshint.com/)
 
-1. There were warnings on missing semicolon and they were fixed. I had to ignore the warning on function as it was designed to be that way.
+1. The small script to open accordion panels was added in the script tag within index.html page. It showed no errors
+
+<details>
+    <summary>index script</summary>
+
+![JS Validation for index.html script tag](assets/readMeFiles/indexJSValidate.png)
+</details>
+
+2. There were warnings on missing semicolon and they were fixed. I had to ignore the warning on function as it was designed to be that way.
 
 <details>
 <summary>game.js</summary>
@@ -77,7 +88,7 @@ The javascript validation was done using [JSHint](https://jshint.com/)
 ![JS Validation for game.js file](assets/readMeFiles/gameJSValidate.png)
 </details>
 
-2. One semi colon warning on questions.js file which was fixed
+3. One semi colon warning on questions.js file which was fixed
 
 <details>
     <summary>questions.js</summary>
@@ -85,10 +96,27 @@ The javascript validation was done using [JSHint](https://jshint.com/)
 ![JS Validation for questions.js file](assets/readMeFiles/quesJSValidate.png)
 </details>
 
-3. There were semi-colon warnings for end.js as well and those were fixed.
+4. There were semi-colon warnings for end.js as well and those were fixed.
 
 <details>
     <summary>end.js</summary>
 
 ![JS Validation for end.js file](assets/readMeFiles/endJSValidate.png)
 </details>
+
+
+### Lighthouse Testing - Performance
+
+#### Desktop
+
+The lighthouse testing for desktop gave 100 results in all key areas: Performance, Accessibility, Best Practices and SEO
+
+![Lighthouse - Desktop](assets/readMeFiles/lighthouseDesktop.png)
+
+#### Mobile
+
+![Lighthouse - Mobile](assets/readMeFiles/lighthouseMobile.png)
+
+
+
+
