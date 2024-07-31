@@ -323,8 +323,8 @@ audio {
 
 /* footer */
 footer {
-    background: url('../images/backgroundPoster.webp') no-repeat center/cover;
     color: #fff;
     line-height: 3em;
     text-align: center;
+    font-size: 80%;
 }
