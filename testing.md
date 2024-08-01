@@ -276,7 +276,9 @@ There were lot of new learnings, while building this project and I am very proud
 
 4. Another learning was while implementing 404.html page. Having this page was a feedback in PP1 and I had no idea, how to redirect to this page, if user lands on non-existing page. I learned that is automatically handled by deployment on Github pages and I dont need to add more.
 
-5. Adding hogwarts background, harry potter music, multiple categories and glowing Magical Quotient title were some amazing highlights in making this project. I throughly enjoyed it.
+5. I learnt a lot on accessibiliity while working on the website and using tools (wave, webaim). I learned form labels should not be empty, fieldsets should have a legend that describes it, each section should follow headings in order (h1-h6). Font-Awesome icons are hidden from screen-readers. The audio and video if added should have a transcript. The color contrast errors were most challenging to resolve. s
+
+6. Adding hogwarts background, harry potter music, multiple categories and glowing Magical Quotient title were some amazing highlights in making this project. I throughly enjoyed it.
 
 
 
