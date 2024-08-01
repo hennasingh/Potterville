@@ -280,9 +280,9 @@ There were lot of new learnings, while building this project and I am very proud
 
 6. Adding hogwarts background, harry potter music, multiple categories and glowing Magical Quotient title were some amazing highlights in making this project. I throughly enjoyed it.
 
-## Unfixed Errors
+## Unresolved Errors
 
-1. I get these errors in console, when user presses on quit button while in the middle of the game. I do not know yet how to resolve them. it points to content script and `<!DOCTYPE HTML>` tag in index.html file.
+1. I get these errors in console, when user presses on quit button while in the middle of the game. I do not know yet how to resolve them. it points to content script and `<!DOCTYPE HTML>` tag in index.html file. The same errors also happen when timer ends, and the screen changes to end.html page.
 
 ![Console Errors- Unresolved](assets/readMeFiles/consoleUnresolved.png)
 
