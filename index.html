@@ -32,9 +32,11 @@
     </header>
 
     <main>
+        <!-- menu content-->
         <section>
             <h2 class="hide">Welcome to Potterville</h2>
             <div class="container">
+                <!-- panel opens on click of the button-->
                 <button class="accordion">Welcome to Potterville</button>
                 <div class="panel">
                     <p>
@@ -84,25 +86,7 @@
     <!-- Font Awesome kit-->
     <script src="https://kit.fontawesome.com/36941e59c7.js" crossorigin="anonymous"></script>
 
-    <script>
-        let accordions = document.getElementsByClassName("accordion");
-        /**
-         * Adding Click listener to each section 
-         * of the accordion class item.
-         */
-        for (let acc of accordions) {
-            acc.addEventListener('click', function () {
-
-                /* Toggle between hiding and showing the active panel */
-                let panel = this.nextElementSibling;
-                if (panel.style.display === "block") {
-                    panel.style.display = "none";
-                } else {
-                    panel.style.display = "block";
-                }
-            });
-        }
-    </script>
+    <script src="assets/js/index.js"></script>
 </body>
 
 </html>
