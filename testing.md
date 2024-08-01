@@ -118,5 +118,38 @@ The lighthouse testing for desktop gave 100 results in all key areas: Performanc
 ![Lighthouse - Mobile](assets/readMeFiles/lighthouseMobile.png)
 
 
+### Accessibility Tetsing - Wave Evaluation Tool
+
+1. The initial test reported text contrast errors on the headings and footer titles. It took a lot of hit and trial to fix this with changing text shadows, adding box shadow and finally fixing it with applying linear gradient to background image
+
+<details><summary>index.html page with errors</summary>
+
+![Wave Evaluation (Errors) - Index.html](assets/readMeFiles/indexWaveErrors.png)
+</details>
 
 
+2. The Index Html page after fixing the contrast errors
+
+<details><summary>index.html page without errors</summary>
+
+![Wave Evaluation (No Errors ) - index.html](assets/readMeFiles/indexWaveNoErrors.png)
+</details>
+
+
+3. The game.html page had few errors that were fixed
+- The fieldset had a missing legend that was added but hidden.
+- There was no description to label attached to input that accepted answers, so aria-label attribute was added.
+- The font-awesome icons were aria-hidden and were kept as is.
+- The Alert was on HTML Audio that needed a transcript attached. I have ignored the alert for now.
+
+<details><summary>game.html page with no errors</summary>
+
+![Wave Evaluation - game.html](assets/readMeFiles/gameWaveValidate.png)
+</details>
+
+4. The end.html had one error on missing a heading level, I was missing h3 and I replaced the Magic Quotient with h3 instead of h2 and increased the font-size in the css.
+
+<details><summary>end.html page with no errors</summary>
+
+![Wave Evaluation - end.html](assets/readMeFiles/endWaveValidate.png.png)
+</details>

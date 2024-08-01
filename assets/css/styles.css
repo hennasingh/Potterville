@@ -20,9 +20,9 @@ body {
     flex-direction: column;
     font-family: "MedievalSharp", cursive;
     font-size: 1.2rem;
-    background: url('../images/hogwartsBg.webp') no-repeat center/cover;
+    background:     linear-gradient(rgba(35, 67, 114, 0.25), rgba(35, 67, 114, 0.35)
+      ), url('../images/hogwartsBg.webp') no-repeat center/cover;
     background-attachment: fixed;
-    box-shadow: inset 0 0 0 1000px rgba(35, 67, 114, 0.2);
 }
 
 /* header*/
@@ -37,12 +37,12 @@ h1 {
     font-size: 3rem;
     font-family: 'HarryPotter', sans-serif;
     margin-top: 50px;
-    text-shadow:3px 3px 2px #524125;
+    text-shadow:3px 3px 2px #000;
 }
 
 h2 {
     font-size: 2rem;
-    text-shadow:3px 3px 2px #524125;
+    text-shadow:3px 3px 2px #000;
 }
 
 /* General main content styles for all pages */
@@ -275,6 +275,7 @@ fieldset {
     text-shadow: 0 0 5px #e9a662, 0 0 10px #e9a662, 0 0 15px #e9a662, 0 0 20px #e9a662, 0 0 25px #e9a662, 0 0 30px #e9a662, 0 0 35px #e9a662;
     animation: glow 1.5s infinite alternate;
     margin-bottom: 1em;
+    font-size: 160%;
 }
 
 .scores>h4 {
