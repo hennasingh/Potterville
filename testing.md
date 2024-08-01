@@ -195,6 +195,37 @@ The [webaim](https://webaim.org/resources/contrastchecker/) tool was used to ver
 
 ## Manual Testing
 
+### Testing User Stories
+
+The following user stories were considered in the UX - Strategy plane
+
+> I want to be able to understand the purpose of the site.
+
+<details><summary>The landing page introduces Potterville and defines the rules of the game</summary>
+
+![User Story- Landing Page](assets/readMeFiles/userStoryLandingTest.png)
+</details>
+
+
+> I want to be able to choose categories within Harry Potter series.
+
+> I want to be able to challenge myself and time my game.
+
+<details><summary>The Game Page offers 6 categories to choose from and an option to time for extra challange</summary>
+
+![User Story - Game Page](assets/readMeFiles/userStoryGameTest.png)
+</details>
+
+
+> I want to be able to see my magical quotient at the end of the game.
+
+> I want to be able to see magical items I collected.
+
+<details><summary>The End Page displays Spell score and magical items collected</summary>
+
+![User Story - End Page](assets/readMeFiles/userStoryEndTest.png)
+</details>
+
 ### Testing Devices
 
 Testing was performed on:
