@@ -42,13 +42,14 @@ for (let category of categButtons) {
 /**
  * 
  * The function loads the questions from the selected category
- * and unhide following:
+ * and hides the category buttons and timer checkbox.
+ * The function unhides following:
  * input answer
  * submit button
  * ques-counter, timer
  * scores
  * quit game button
- * Add click listener to submit button
+ * Add click listener to submit button and enter press
  * and calls displayQuestion function
  * Code help taken from https://www.youtube.com/watch?v=riDzcEQbX6k
  */
@@ -75,7 +76,7 @@ function runQuiz(quizType) {
         }
     });
 
-    //The function to calculate timeout of 60 seconds
+    //The code section to calculate timeout of 60 seconds runs only if user opt for the challenge
     //Ref: https://stackoverflow.com/questions/4435776/simple-clock-that-counts-down-from-30-seconds-and-executes-a-function-afterward
 
     if(document.getElementById('flipswitch').checked) {
@@ -112,9 +113,10 @@ function displayQuestion() {
 }
 
 /**
- * This function is called when user clicks on submit button 
+ * This function is called when user clicks on submit button or presses
+ * an enter.
  * the function compares user answer to current question answer and add
- * a green color to the game container for correct answer and red for incorrect.
+ * a green color to the game container for correct answer and red for incorrect or empty input.
  * 
  * The user is awarded a random spell from the list for correct answer.
  * The function checks the count of remaining questions and calls end.html if no ques is left
@@ -140,6 +142,7 @@ function checkAnswer() {
         }, 1000);
 
     } else {
+        //this is called if the input answer is wrong or is left empty
         gameContainer.classList.add('wrong');
 
         setTimeout(() => {
@@ -157,6 +160,8 @@ function checkAnswer() {
 /**
  * 
  * This function is called when either the timer or game finishes
+ * the function saves the magical items earned to the local storage to display
+ * on the end screen.
  */
 function calculateFinalScore() {
     localStorage.setItem('magicalItems', JSON.stringify(awardedSpell));

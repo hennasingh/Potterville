@@ -264,7 +264,19 @@ Testing was performed on:
 | Click on Play Again button | Redirects to game page to select category | Pass |
 
 
+## Struggles, Learnings and AHA Moments 
 
+There were lot of new learnings, while building this project and I am very proud of this app.
+
+1. When I initially started working on the project, I struggled with how many html pages will I have make for this quiz. I had done a bit of React in the past and I was aware how single page applications could be created but how to do it with Javascript, I had no idea. My initial idea was to take in user input, do a sorting hat and display the name when user selects categories. While on my search, I learned about concept called `MutationObserver` that provides the ability to watch for changes being made to the DOM tree. I tried implemention by attaching observer to game container but it did not work as intended. The youtube video by [Webdev](https://www.youtube.com/watch?v=riDzcEQbX6k) implementing the concept of hiding the containers and unhiding when neede helped frame the beginning of the game page.
+
+2. My second struggle was how to iterate the list of questions and record answers. [Anthony's quiz project](https://github.com/Ant2210/project2/blob/main/assets/js/quiz.js) gave a clear picture of how I could do the same. He was my team-mate in July hackathon and he is a veteran. Looking at his project code gave me the understanding of how to sort the questions, remove the question from the list and keep track of correct answers. I was able to implement same logic to award magical items for the correct answers.
+
+3. Another struggle I faced was in awarding Potterhead if the user selects the timer for the challenge. It was awarding the title, even if user had not opted for it. I found out I was saving it to local storage only if the checkbox was checked and not otherwise. I implemented the function to clear storage, when user clicks on play again.
+
+4. Another learning was while implementing 404.html page. Having this page was a feedback in PP1 and I had no idea, how to redirect to this page, if user lands on non-existing page. I learned that is automatically handled by deployment on Github pages and I dont need to add more.
+
+5. Adding hogwarts background, harry potter music, multiple categories and glowing Magical Quotient title were some amazing highlights in making this project. I throughly enjoyed it.
 
 
 
