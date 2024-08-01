@@ -4,21 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <!--Meta tags for search engines-->
     <meta name="description"
         content="Potterville. Harry Potter themed quiz. Animations, witch, wizards, Hogwarts. The Dark arts, Magical objects and people">
     <meta name="keywords"
         content="Harry Potter, Trivial Pursuit, quiz, potterville, magic, dungeons, wands, spells, charms, potions">
+    <meta name="author" content="Henna Singh">
+
     <!--Title-->
     <title>Potterville</title>
+
     <!--Favicon-->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+
     <!--Google Font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+
     <!-- styles.css-->
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
@@ -34,19 +40,26 @@
     <main>
         <section id="score-section">
             <div class="score-container">
+                <!-- glowing title div-->
                 <div>
                     <h3 class="glow-text"><i class="fa-solid fa-wand-sparkles"></i> Magic Quotient</h3>
                 </div>
+                
+                <!-- score labels div-->
                 <div class="scores">
                     <h4>Magic Items Earned: <span id="magic-spells">0</span></h4>
                     <h4>Your category: <span id="category"></span></h4>
                     <h4>Your Magic IQ: <span id="total-score">0</span>%</h4>
                     <h4>Are you Potterhead: <span id="isPotterhead">No</span></h4>
                 </div>
+
+                <!-- play again button div-->
                 <div class="reset">
                     <button class="play-again" id="play-again">Play Again</button>
                 </div>
             </div>
+
+
             <audio src="./assets/audio/hogwartsHymm.m4a" controls muted loop>
                 <p>Your browser doesn't support HTML5 audio.</p>
             </audio>

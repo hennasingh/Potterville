@@ -4,21 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <!--Meta tags for search engines-->
     <meta name="description"
         content="Potterville. Harry Potter themed quiz. Animations, witch, wizards, Hogwarts. The Dark arts, Magical objects and people">
     <meta name="keywords"
         content="Harry Potter, Trivial Pursuit, quiz, potterville, magic, dungeons, wands, spells, charms, potions">
+    <meta name="author" content="Henna Singh">
+
     <!--Title-->
     <title>Potterville</title>
+
     <!--Favicon-->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+
     <!--Google Font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+
     <!-- styles.css-->
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
@@ -31,18 +37,27 @@
         </div>
     </header>
     <main>
+        <!-- game play content-->
         <section id="game-section">
             <div class="game-container" id="game-container">
+
+                <!-- Question and Timer div-->
                 <div class="ques-timer hide" id="ques-counter-div">
                     <h3>Question: <span id="ques-counter"></span>/10</h3>
                     <h3 id="time-text" class="hide">Timer: <span id="timer">60</span> sec</h3>
                 </div>
+
+                <!--Magic Spells Earned div-->
                 <div id="spellboard" class="hide">
                     <h4>Magic Items Earned: <span id="magic-spells">0</span></h4>
                 </div>
+
+                <!-- question text div-->
                 <div class="question-container">
                     <h3 id="ques-title">Pick a Quiz Category</h3>
                 </div>
+
+                <!-- Enable timer div-->
                 <div id="checkbox-timer">
                     <fieldset>
                         <legend class="hide">Timer</legend>
@@ -50,29 +65,35 @@
                             <label for="flipswitch">60 sec Potterhead timer (Dare a challenge) <i class="fa-solid fa-skull-crossbones"></i></label>
                     </fieldset>
                 </div>
+
+                <!-- question categories buttons div-->
                 <div id="categories-container">
                     <button class="categ-btn" data-type="1">The Dark Arts</button>
                     <button class="categ-btn" data-type="2">Magical Objects</button>
                     <button class="categ-btn" data-type="3">Hogwarts</button>
                     <button class="categ-btn" data-type="4">Magical People</button>
-                    <button class="categ-btn" data-type="5">
-                        Magical Spells & Potions
-                    </button>
-                    <button class="categ-btn" data-type="6">
-                        Animals & Magical Creatures
-                    </button>
+                    <button class="categ-btn" data-type="5">Magical Spells & Potions</button>
+                    <button class="categ-btn" data-type="6">Animals & Magical Creatures</button>
                 </div>
+
+                <!-- input answer div-->
                 <div id="input-container" class="hide">
                     <label for="answer"  aria-label="text input to accept one word answers"></label>
                     <input id="answer" type="text" name="answer">
                 </div>
+
+                <!-- submit button div-->
                 <div>
                     <button id="submit" class="submit-btn hide">Submit</button>
                 </div>
             </div>
+
+            <!-- quit button div-->
             <div class="quit-game hide" id="quit-game">
                 <a href="index.html">Quit Game</a>
             </div>
+
+
             <audio src="./assets/audio/prologue.m4a" controls loop>
                 <p>Your browser doesn't support HTML5 audio.</p>
             </audio>
@@ -85,6 +106,7 @@
 
     <!-- Font Awesome kit-->
     <script src="https://kit.fontawesome.com/36941e59c7.js" crossorigin="anonymous"></script>
+
     <script src="assets/js/game.js" type="module"></script>
 </body>
 
