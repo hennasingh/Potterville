@@ -153,3 +153,41 @@ The lighthouse testing for desktop gave 100 results in all key areas: Performanc
 
 ![Wave Evaluation - end.html](assets/readMeFiles/endWaveValidate.png.png)
 </details>
+
+
+### WebAIM - Color Contrast Testing
+
+The [webaim](https://webaim.org/resources/contrastchecker/) tool was used to verify color contrast for background and foreground
+
+1. The white text on blue background passed the test in index.html page
+
+<details><summary>Color Contrast for index.html page</summary>
+
+![Color Contrast - index.html](assets/readMeFiles/indexColorValidate.png)
+</details>
+
+2. The color contrast for orange over blue with alpha value failed for WCAG AAA rating as I was not able to add alpha to the color as tool did not have option to do. It passes AAA on large text and text is large in the code
+
+<details><summary>Color Contrast for Enter Potterville</summary>
+
+![Color Contrast -Enter Potterville](assets/readMeFiles/colorContrastPotterville.png)
+</details>
+
+3. The color contrast for category buttons in game.html passed WCAG AA and WCAG AAA ratings
+
+<details><summary>Color Contrast for Quiz Category Buttons</summary>
+
+![Color Contrast - Quiz Categories](assets/readMeFiles/quizCategoryColorValidate.png)
+</details>
+
+4. The h3 question title or pick a quiz category text failed the color contrast in the first test, so colors were change to same as to what was kept for category buttons (#524125 for background and #fff for foreground)
+
+<details><summary>h3 question title on game.html page failed test</summary>
+
+![Color Contrast -Question Title](assets/readMeFiles/titleColorValidate.png)
+</details>
+
+
+
+
+
