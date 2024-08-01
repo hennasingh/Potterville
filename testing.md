@@ -10,7 +10,6 @@ HTML and CSS code for the website were tested and validated by using [HTML Valid
 
 
 #### HTML Validation
-<hr>
 
 1. The HTML Validation for index page showed errors on first try, those were on section without heading . That was corrected and the test passed
 
@@ -54,9 +53,10 @@ HTML and CSS code for the website were tested and validated by using [HTML Valid
 ![404 HTML Page without errors](assets/readMeFiles/page404HtmlValidate.png)
 </details>
 
+<hr>
 
 #### CSS Validation
-<hr>
+
 
 1. There was one file for CSS that passed validation in the first try
 
@@ -66,9 +66,9 @@ HTML and CSS code for the website were tested and validated by using [HTML Valid
 ![CSS Validation for Stylesheet](assets/readMeFiles/stylesCssValidate.png)
 </details>
 
+<hr>
 
 #### JavaScript Validation
-<hr>
 
 The javascript validation was done using [JSHint](https://jshint.com/)
 
@@ -104,6 +104,7 @@ The javascript validation was done using [JSHint](https://jshint.com/)
 ![JS Validation for end.js file](assets/readMeFiles/endJSValidate.png)
 </details>
 
+<hr>
 
 ### Lighthouse Testing - Performance
 
@@ -117,6 +118,7 @@ The lighthouse testing for desktop gave 100 results in all key areas: Performanc
 
 ![Lighthouse - Mobile](assets/readMeFiles/lighthouseMobile.png)
 
+<hr>
 
 ### Accessibility Tetsing - Wave Evaluation Tool
 
@@ -154,6 +156,7 @@ The lighthouse testing for desktop gave 100 results in all key areas: Performanc
 ![Wave Evaluation - end.html](assets/readMeFiles/endWaveValidate.png.png)
 </details>
 
+<hr>
 
 ### WebAIM - Color Contrast Testing
 
@@ -189,6 +192,43 @@ The [webaim](https://webaim.org/resources/contrastchecker/) tool was used to ver
 
 ![Color Contrast -Question Title](assets/readMeFiles/titleColorValidate.png)
 </details>
+
+## Manual Testing
+
+### Testing Devices
+
+Testing was performed on:
+
+- Laptop
+  - Lenovo Yoga 9
+
+- Desktop Screen
+  - 29 inch ViewSonic Screen
+
+- Browsers
+    - Google Chrome
+
+
+### Manual Feature Tests
+
+| Action | Expected Outcome | Result |
+|--------| -----------------|--------|
+| Click on Welcome to Potterville Button | Opens panel to display description | Pass |
+| Click on Rules of the game | Opens panel to display rules | Pass |
+| Click on either of above two buttons again | Description closes | Pass |
+| Hover over thge buttons on home page | Cursor changes to pointer | Pass |
+| Hover over Enter Potterville | button transforms bigger | Pass |
+| Click on enter Potterville | Navigates to Game Page | Pass |
+| Click on timer checkbox | Enables timer for the game | Pass |
+| Click on either of 6 category buttons | Displays category on the page and quiz starts | Fail |
+| Hover over any of the 6 buttons | Cursor changes to grabbing | Pass |
+| Enter correct answer | background glows green | Pass |
+| Enter wrong answer | background pauses  glows reddish | Pass |
+| Timer runs out | Scoreboard is displayed| Pass |
+| Click on audio | Sound is played | Pass |
+| Press enter after typing answer in the input box | Moves to the next questions after displaying color | Pass |
+| Click on Play Again button | Redirects to game page to select category | Pass |
+
 
 
 
