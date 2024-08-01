@@ -120,7 +120,9 @@ The lighthouse testing for desktop gave 100 results in all key areas: Performanc
 
 <hr>
 
-### Accessibility Tetsing - Wave Evaluation Tool
+### Accessibility Testing - Wave Evaluation Tool
+
+The [Wave Crome browser](https://wave.webaim.org/extension/) extension was used to do testing for all website pages below.
 
 1. The initial test reported text contrast errors on the headings and footer titles. It took a lot of hit and trial to fix this with changing text shadows, adding box shadow and finally fixing it with applying linear gradient to background image
 
@@ -251,10 +253,11 @@ Testing was performed on:
 | Hover over Enter Potterville | button transforms bigger | Pass |
 | Click on enter Potterville | Navigates to Game Page | Pass |
 | Click on timer checkbox | Enables timer for the game | Pass |
-| Click on either of 6 category buttons | Displays category on the page and quiz starts | Fail |
+| Click on either of 6 category buttons | Displays category on the page and quiz starts | Pass  |
 | Hover over any of the 6 buttons | Cursor changes to grabbing | Pass |
 | Enter correct answer | background glows green | Pass |
 | Enter wrong answer | background pauses  glows reddish | Pass |
+| Click on Quit Game button | Redirects to Home page | Pass |
 | Timer runs out | Scoreboard is displayed| Pass |
 | Click on audio | Sound is played | Pass |
 | Press enter after typing answer in the input box | Moves to the next questions after displaying color | Pass |
