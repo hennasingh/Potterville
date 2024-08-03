@@ -122,7 +122,7 @@ The lighthouse testing for desktop gave 100 results in all key areas: Performanc
 
 ### Accessibility Testing - Wave Evaluation Tool
 
-The [Wave Crome browser](https://wave.webaim.org/extension/) extension was used to do testing for all website pages below.
+The [Wave Chrome browser extension](https://wave.webaim.org/extension/) was used to do testing for all website pages below.
 
 1. The initial test reported text contrast errors on the headings and footer titles. It took a lot of hit and trial to fix this with changing text shadows, adding box shadow and finally fixing it with applying linear gradient to background image
 
@@ -155,7 +155,7 @@ The [Wave Crome browser](https://wave.webaim.org/extension/) extension was used 
 
 <details><summary>end.html page with no errors</summary>
 
-![Wave Evaluation - end.html](assets/readMeFiles/endWaveValidate.png.png)
+![Wave Evaluation - end.html](assets/readMeFiles/endWaveValidate.png)
 </details>
 
 <hr>
@@ -236,7 +236,7 @@ Testing was performed on:
   - Lenovo Yoga 9
 
 - Desktop Screen
-  - 29 inch ViewSonic Screen
+  - 29 inch ViewSonic Screen (4k Monitor)
 
 - Browsers
     - Google Chrome
@@ -249,14 +249,14 @@ Testing was performed on:
 | Click on Welcome to Potterville Button | Opens panel to display description | Pass |
 | Click on Rules of the game | Opens panel to display rules | Pass |
 | Click on either of above two buttons again | Description closes | Pass |
-| Hover over thge buttons on home page | Cursor changes to pointer | Pass |
-| Hover over Enter Potterville | button transforms bigger | Pass |
+| Hover over the buttons on home page | Cursor changes to pointer | Pass |
+| Hover over Enter Potterville | Button transforms bigger | Pass |
 | Click on enter Potterville | Navigates to Game Page | Pass |
 | Click on timer checkbox | Enables timer for the game | Pass |
 | Click on either of 6 category buttons | Displays category on the page and quiz starts | Pass  |
 | Hover over any of the 6 buttons | Cursor changes to grabbing | Pass |
-| Enter correct answer | background glows green | Pass |
-| Enter wrong answer | background pauses  glows reddish | Pass |
+| Enter correct answer | Background glows green | Pass |
+| Enter wrong answer | Background glows reddish | Pass |
 | Click on Quit Game button | Redirects to Home page | Pass |
 | Timer runs out | Scoreboard is displayed| Pass |
 | Click on audio | Sound is played | Pass |
