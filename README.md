@@ -41,6 +41,10 @@ This took a bit of time in figuring out, it was a continuous development in this
 - End Page: Game Over Page showing magical quotient and a link to restart the game.
 
 
+### Structure
+
+The quiz app does not have an elaborate navigation route. The landing page shows the rules and introduction to potterville. The button on the page redirects to the category options and game navigates using the links and then scoreboard is shown at the end.
+
 ### Skeleton
 
 The wireframes for mobile and desktop were created using Balsamiq. These were the original ideas but they changed as I learned and progressed in the actual development of the quiz. Some of the features will be implemented in future versions.
@@ -154,13 +158,13 @@ This is a custom page that appears if user types incorrect url and redirects to 
 
 ## Future Implementations
 
-1. In the next version of the quiz, I would like to add a battleground along with answering the quiz questions. Each spell earned can be used to hit the enemy to reduce their power, as it shows in the design wireframe.
+1. I would like to add a battleground along with answering the quiz questions. Each spell earned can be used to hit the enemy to reduce their power, as it shows in the design wireframe.
 
-2. In the next version, the website will take user details (name) and offers to sort into house using Sorting Hat as per the design wireframe.
+2. The website will take user details (name) and offers to sort into house using Sorting Hat as per the design wireframe.
 
-3. In the next version of the website, there will be a restriction to play the same category again.
+3. There will be a restriction to play the same category again.
 
-4. In the next version of the website, user scores will be saved and a leaderboard will be shown.
+4. User scores will be saved and a leaderboard will be shown.
 
 
 ## Accessibility
