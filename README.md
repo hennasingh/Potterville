@@ -151,6 +151,7 @@ This is a custom page that appears if user types incorrect url and redirects to 
 <img src="assets/readMeFiles/page404Feature.png" alt="404 error msg with a button to go home">
 </details>
 
+
 ## Future Implementations
 
 1. In the next version of the quiz, I would like to add a battleground along with answering the quiz questions. Each spell earned can be used to hit the enemy to reduce their power, as it shows in the design wireframe.
@@ -160,6 +161,16 @@ This is a custom page that appears if user types incorrect url and redirects to 
 3. In the next version of the website, there will be a restriction to play the same category again.
 
 4. In the next version of the website, user scores will be saved and a leaderboard will be shown.
+
+
+## Accessibility
+
+The accessibility tests are included in the testing section below. In addition to that
+
+1. All html pages use semantic HTML headings.
+2. Aria-labels are used where necessary (label, inputs)
+3. legend description is used for fieldset
+4. Color-contrast for foreground and background meet WCAG standard guidelines.
 
 
 ## Technologies Used
@@ -211,6 +222,7 @@ You can clone the project to deploy it locally on your own computer
 
 
 ## Credits
+
 - [font-space](https://www.fontspace.com/category/harry-potter) - For HarryPotter font
 - [Google Fonts](https://fonts.google.com/specimen/MedievalSharp) - For MedievalSharp font
 - [Wizarding World](https://www.wizardingworld.com/features/try-out-our-new-harry-potter-video-call-backgrounds) - For Hogwarts Castle background
