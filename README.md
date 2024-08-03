@@ -223,10 +223,39 @@ You can clone the project to deploy it locally on your own computer
 
 ## Credits
 
+### Code Used
+
+- [Accordion - W3C Schools](https://www.w3schools.com/howto/howto_js_accordion.asp) - For logic on Accordions
+- [Web Dev Simplified](https://www.youtube.com/watch?v=riDzcEQbX6k) - For quiz container logic
+- [Stack Overflow](https://stackoverflow.com/questions/4435776/simple-clock-that-counts-down-from-30-seconds-and-executes-a-function-afterward) - For set interval function
+- [Anthony's Code](https://github.com/Ant2210/project2/blob/main/assets/js/quiz.js) - For question sorting and removal logic
+
+
+### Content
+
+- [chatGPT](https://chat.openai.com/) Used to generate landing page details
+- [Hasbro Gaming](https://www.amazon.co.uk/Hasbro-Gaming-Trivial-Pursuit-Wizarding/dp/B08D2GPBFP) - For Harry Potter Trivial Pursuit questions
+- Henna Singh: All other content created by the developer
+
+### Media
+
+- [UI.dev](https://ui.dev/amiresponsive) Used to generate the responsive image on top of the readMe file
+- [Wizarding World](https://www.wizardingworld.com/features/try-out-our-new-harry-potter-video-call-backgrounds) - For Hogwarts Castle background
+- [Icon Finder](https://www.iconfinder.com/) - Triwizard Cup Favicon and Sorting Hat vector
+- [ClipGrab](https://clipgrab.org/faqs/howto-download-youtube-video) - used to download Harry potter music from youtube
+- [You Tube](https://www.youtube.com/playlist?list=PLYXfr3Na3Iuf8Kg__C6Fll5bapkVOXp9b) - For Harry Potter Music
 - [font-space](https://www.fontspace.com/category/harry-potter) - For HarryPotter font
 - [Google Fonts](https://fonts.google.com/specimen/MedievalSharp) - For MedievalSharp font
-- [Wizarding World](https://www.wizardingworld.com/features/try-out-our-new-harry-potter-video-call-backgrounds) - For Hogwarts Castle background
-- [Accordion - W3C Schools](https://www.w3schools.com/howto/howto_js_accordion.asp) - For logic on Accordions
-- [Icon Finder](https://www.iconfinder.com/) - Triwizard Cup Favicon and Sorting Hat vector
+
+
+## Acknowledgements
+
+- Spencer Barriball - Mentor : For guidance and review on the website
+
+- Kamil Wojciechowski - Cohort Facilitator : For weekly stand-up meetings and informative sessions
+
+- Class April 2024 - For motivation, group discussions and code reviews.
+
+
 
 
