@@ -2,6 +2,8 @@
 
 Potterville is a brief insight into magical Harry Potter series. The quiz app is built using HTML5, CSS3, JavaScript for the Milestone 2 project of Code Institute's Full Stack Development diploma.
 
+![Potterville - Am I responsive shot](assets/readMeFiles/responsivePotterville.png)
+
 Live Link: https://hennasingh.github.io/Potterville/
 
 ## User Experience - UX
@@ -71,6 +73,82 @@ Color Scheme suggestions were taken from [Coolers](coolers.co) on uploading the 
 
 ![color-palette](./assets/readMeFiles/colorPalette.png)
 
+</details>
+
+## Site Features and Responsiveness
+
+### Header
+
+The site header "Potterville" along with the sub-heading "Trivial Pursuit" appears on top of all the pages and in all screen sizes
+
+<img src="assets/readMeFiles/headerFeature.png" alt="potterville title along with game name Trivial Pursuit">
+
+### Footer
+
+The site footer is plain text showing the author of the website and appears on all pages in all screen sizes
+
+<img src="assets/readMeFiles/footerFeature.png" alt="footer showing henns singh as author of the website">
+
+### Landing/Home Page
+
+The site landing page shows 2 accordion pannels and a button to redirect to game screen. 
+
+<details><summary>Desktop View of Landing Page</summary>
+<img src="assets/readMeFiles/homePageFeature.png" alt="accordion panels showing rules of the game and intro to potterville">
+</details>
+
+<details><summary>Responsive View of Landing Page</summary>
+<img src="assets/readMeFiles/homePageMobileFeature.png" alt="responsive view of accordions showing rules of the game and intro to potterville">
+</details>
+
+### Game/Quiz Page
+
+The site game page hides/unhides container divs as one progresses in the game.
+
+<details><summary>Choose Category Container (Desktop)</summary>
+<img src="assets/readMeFiles/gamePageCategoryFeature.png" alt="showing quiz categories and timer checkbox">
+</details>
+
+<details><summary>Choose Category Container (Mobile)</summary>
+<img src="assets/readMeFiles/categoryContainerResponsive.png" alt="showing quiz categories and timer checkbox">
+</details>
+
+
+The click on the category above takes to the quiz questions in that category. If the timer is enabled, it is shown on the right. The page also has a quit button to go back to the landing page. The page offers audio to play in the background.
+
+<details><summary>Game Container with Quiz questions and input answer (Desktop)</summary>
+<img src="assets/readMeFiles/gamePageQuizContainer.png" alt="showing a ques and input box with a button to submit answer">
+</details>
+
+<details><summary>Game Container with Quiz questions and input answer (Mobile)</summary>
+<img src="assets/readMeFiles/quizContainerResponsive.png" alt="showing a ques and input box with a button to submit answer">
+</details>
+
+The game automatically gets over at the end of the timer and goes to the end page.
+
+<details><summary>Quiz Container with the timer enabled (Dekstop)</summary>
+<img src="assets/readMeFiles/quizWithTimer.png" alt="quiz showing ques, timer of 60 sec and input text to submit answer">
+</details>
+
+
+### Score Page/End Page
+
+This page display details on the final score achieved. Magical Items are granted for every correct answer. Magic IQ is calculated based on the items collected. If timer is enabled, you are declared a Potterhead. The page displays a winning music.
+
+<details><summary>Score Page (Desktop)</summary>
+<img src="assets/readMeFiles/scorePageFeature.png" alt="glowing magic text, and quiz score showing items earned and magic IQ with a button to play again">
+</details>
+
+<details><summary>Score Page (Responsive)</summary>
+<img src="assets/readMeFiles/scorePageResponsive.png" alt="score page with scores on items earned, magic iq and play again option">
+</details>
+
+### 404 Page
+
+This is a custom page that appears if user types incorrect url and redirects to the main page on click of the button.
+
+<details><summary>404 Page</summary>
+<img src="assets/readMeFiles/page404Feature.png" alt="404 error msg with a button to go home">
 </details>
 
 ## Future Implementations
