@@ -10,9 +10,9 @@ Live Link: https://hennasingh.github.io/Potterville/
 
 ### Strategy
 
-I have always been fond of Harry Potter book series. The books have a way of giving a magical pleasant feeling. I have had a Trivial Pursuit game (bought from London Airport) for a while and thought of making a more fun digital version of it.
+I have always been fond of the Harry Potter book series. The books have a way of giving a magical pleasant feeling. I have had a Trivial Pursuit game (bought from London Airport) for a while and thought of making a more fun digital version of it.
 
-<quote> The project has no prospective client, it is built for fun and engagement and learning purposes.</quote>
+<blockquote>The project has no prospective client, it is built for fun and engagement and learning purposes.</blockquote>
 
 __User Stories__
 - I want to be able to understand the purpose of the site.
