@@ -258,7 +258,7 @@ You can clone the project to deploy it locally on your own computer
 
 - Kamil Wojciechowski - Cohort Facilitator : For weekly stand-up meetings and informative sessions
 
-- Class April 2024 - For motivation, group discussions and code reviews.
+- Class April 2024 - For motivation, group discussions. Special thanks to [Naomi](https://github.com/Xakkusu) and [Claudia](https://github.com/SchoemanClaudia) for taking the time to review the code.
 
 
 
