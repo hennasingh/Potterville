@@ -13,6 +13,7 @@
 }
 
 /* General Styles*/
+/* Background transparency linear gradient ref: https://stackoverflow.com/a/25816846 */
 
 body {
     min-height: 100vh;
@@ -31,6 +32,7 @@ header {
     color: #fff;
 }
 
+/* Text shadow to improve accessibility ref: https://www.w3schools.com/cssref/css3_pr_text-shadow.php*/
 h1 {
     line-height: 80px;
     letter-spacing: 2px;
