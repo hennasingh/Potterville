@@ -212,7 +212,7 @@ The website is deployed using Github Pages functionality provided by Github. The
 6. Under the branch section below that, select /root folder and save.
 7. Come back to Code section of the repository. Give a few minutes and refresh the page. You will find Deployments section generated the right side with a URL to the deployed site.
 
-### Local Clones
+### Local Clones or Fork
 
 You can clone the project to deploy it locally on your own computer
 
@@ -223,6 +223,7 @@ You can clone the project to deploy it locally on your own computer
 
 3. There are 3 methods provided to clone 'HTTPS', 'SSH',or 'Github Cli' that requires you to copy the repository link and type `git clone`in your terminal (mac) or command prompt (windows) in the chosen directory.
 4. The 4th option requires you to install Github Desktop and you can open the repository in your chosen local directory.
+5. The other option is to Fork the repository as shown in top right of the snapshot above. This will create a copy of repo in your own Github and you can make changes making this repo as a starting template.
 
 
 ## Credits
