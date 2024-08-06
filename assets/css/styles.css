@@ -165,10 +165,8 @@ main {
     background-color: rgba(224, 133, 41, 0.5);
 }
 
-.ques-timer {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 1em;
+.ques-timer h3 {
+   padding: 0.4em 0; 
 }
 
 #spellboard {
@@ -337,8 +335,17 @@ footer {
     font-size: 80%;
 }
 
-/* Media Query: Tablets and above (only needed to change audio width, rest works perfect as is */
-@media screen and (min-width: 768px) {
+/* Media Query: L;arge Phone Screens and above */
+@media screen and (min-width: 425px) {
+    
+    /* Game Page*/
+
+    .ques-timer {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1em;
+    }
+
     audio {
         width: 300px;
     }
