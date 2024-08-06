@@ -21,8 +21,7 @@ body {
     flex-direction: column;
     font-family: "MedievalSharp", cursive;
     font-size: 1.2rem;
-    background:     linear-gradient(rgba(35, 67, 114, 0.25), rgba(35, 67, 114, 0.35)
-      ), url('../images/hogwartsBg.webp') no-repeat center/cover;
+    background: linear-gradient(rgba(35, 67, 114, 0.25), rgba(35, 67, 114, 0.35)), url('../images/hogwartsBg.webp') no-repeat center/cover;
     background-attachment: fixed;
 }
 
@@ -39,12 +38,12 @@ h1 {
     font-size: 3rem;
     font-family: 'HarryPotter', sans-serif;
     margin-top: 50px;
-    text-shadow:3px 3px 2px #000;
+    text-shadow: 3px 3px 2px #000;
 }
 
 h2 {
     font-size: 2rem;
-    text-shadow:3px 3px 2px #000;
+    text-shadow: 3px 3px 2px #000;
 }
 
 /* General main content styles for all pages */
@@ -286,6 +285,7 @@ fieldset {
 
 audio {
     margin: 2em;
+    width: 250px;
 }
 
 .reset {
@@ -294,7 +294,8 @@ audio {
 
 /* General Style for both End Page and 404 Page Button */
 
-.play-again, .take-home {
+.play-again,
+.take-home {
     padding: 0.6em 1em;
     background-color: #234372;
     font-size: 1.5rem;
@@ -314,8 +315,8 @@ audio {
     margin-top: 3em;
 }
 
-.error-div{
-  text-align: center;
+.error-div {
+    text-align: center;
 }
 
 .error-div h4 {
@@ -324,7 +325,7 @@ audio {
 
 .take-home {
     text-decoration: none;
-    color:#fff;
+    color: #fff;
     display: inline-block;
 }
 
@@ -334,4 +335,12 @@ footer {
     line-height: 3em;
     text-align: center;
     font-size: 80%;
+}
+
+/* Media Query: Tablets and above (only needed to change audio width, rest works perfect as is */
+@media screen and (min-width: 768px) {
+    audio {
+        width: 300px;
+    }
+
 }
