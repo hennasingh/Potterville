@@ -284,5 +284,8 @@ There were lot of new learnings, while building this project and I am very proud
 
 ![Console Errors- Unresolved](assets/readMeFiles/consoleUnresolved.png)
 
+## Unresolved Bugs
+
+There are no known unresolved bugs. Please create an issue with full details if you come across one. Thank you for your time to review the game.
 
 

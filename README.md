@@ -235,7 +235,7 @@ You can clone the project to deploy it locally on your own computer
 - [Stack Overflow](https://stackoverflow.com/questions/4435776/simple-clock-that-counts-down-from-30-seconds-and-executes-a-function-afterward) - For set interval function
 - [Anthony's Code](https://github.com/Ant2210/project2/blob/main/assets/js/quiz.js) - For question sorting and removal logic
 - [Text Shadow - W3C Schools](https://www.w3schools.com/cssref/css3_pr_text-shadow.php) - For text shadow on header texts to improve color-contrast
-- [Abigail Harrison - Webinar on Meta Tags](https://www.youtube.com/watch?v=t-4qqmikIqk) -  For open graphic meta tags
+- [Abigail Harrison - Webinar on Meta Tags](https://www.youtube.com/watch?v=t-4qqmikIqk) -  For open graph meta tags
 - [Stack Overflow](https://stackoverflow.com/a/25816846) - For background transparency layer using linear-gradient
 
 
