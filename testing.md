@@ -284,6 +284,8 @@ There were lot of new learnings, while building this project and I am very proud
 
 ![Console Errors- Unresolved](assets/readMeFiles/consoleUnresolved.png)
 
+8. Just after I submitted, I was attending Community QnA webinar on assessment criteria and I asked a ques on media queries when we have not used it and its still responsive. This made me discover that my timer was not responsive on 320px screens, it was fluctuating to next line while playing the game. I created a branch on my submitted project and added a media query to fix the display :D .
+
 ## Unresolved Bugs
 
 There are no known unresolved bugs. Please create an issue with full details if you come across one. Thank you for your time to review the game.
